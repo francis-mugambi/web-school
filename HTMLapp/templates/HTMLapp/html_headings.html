@@ -1,0 +1,60 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}HTML headings h1 to h6{% endblock %}
+{% block metadescription %}Html headings h1 to h6 {% endblock %}
+{% block metakeywords %}, HTML headings{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:20px;">HTML Headings H1 to H6</h1><br>
+<h2 style="font-size:20px">Description of HTML headings H1 to H6</h2>
+<ul>
+    <li><code>&lt;H1&gt;</code> - This is the main heading of a web page, each page should have only one H1 heading</li>
+    <li><code>&lt;H2&gt;</code> - This is the heading that follows after the H1 heading, it can be used to define
+        sub-topics of an HTML page.</li>
+    <li><code>&lt;H3&gt;</code> - H3 heading can be used after H2 tag to create a sub-topic relating to the topic of H2
+        heading .</li>
+    <li><code>&lt;H4&gt;</code> - It is defined after the H3 heading</li>
+    <li><code>&lt;H5&gt;</code> - It is defined after H4 heading</li>
+    <li><code>&lt;H6&gt;</code> - This is the smallest heading of a web page.
+</ul>
+<span class="text-warning ">NB/ The headings should not be used to enlarge the size of a text instead use the font-size
+    CSS
+    property, they should only be used for creating heading of topics and sub-topics.
+</span><br><br>
+<h3 class="small text-success">These are the 6 HTML headings texts in a browser:</h3>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6><br>
+<h2 style="font-size: 17px;">This is a an example of a code that will display all the HTML headings.</h2>
+<textarea class="text-info jumbotron" name="text"
+    style="width:100%;height:450px;border:solid lightgray 10px;padding:10px">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Page Title</title> 
+    </head>
+    <body>
+        <!--HTML headings.-->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+    </body>
+    </html>
+</textarea>
+<div class="clearfix">
+    <span class="float-left"><a class="page-link" href="/html/html-structure/">Previous</a></span>
+    <span class="float-right"><a class="page-link" href="/html/html-sematics/">Next</a></span>
+</div>
+</article>
+
+</div>
+<hr>
+
+{% endblock %}

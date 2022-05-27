@@ -1,0 +1,72 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}HTML Forms - askgooglehub {% endblock %}
+{% block metadescription %}HTML Forms, HTML forms are very important when developing a website. They help the users to interact with the website {% endblock %}
+{% block metakeywords %}Forms in HTML, HTML forms{% endblock %}
+
+{% block content %}    
+                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:25px;">HTML Forms</h1><br> 
+               <p>HTML forms are used to collect the user input that is sent to the server for processing. Forms are defined using the <code>&lt;form&gt;</code> tag.</p>
+               <h2 style="font-size: 20px;">HTML Form Elements</h2>
+               <ul>
+                       <li><code>&lt;form&gt;</code> - It defines an HTML form. It creates a HTML form.</li>
+                       <li><code>&lt;input&gt;</code> - It is used to get an input from the user.</li>
+                       <li><code>&lt;textarea&gt;</code> - It defines a label for the form elements.</li>
+                       <li><code>&lt;button&gt;</code> - It defines a button. </li>
+                        <li><code>&lt;fieldset&gt;</code> - It groups related elements in a form. </li>
+                        <li><code>&lt;option&gt;</code> - It defines an option to select from a group. </li>
+                        <li><code>&lt;Label&gt;</code> - It defines a label for the input element.</li>
+                        <li><code>&lt;legend&gt;</code> -  It adds a caption to a fieldset. </li>
+                        <li><code>&lt;optgroup&gt;</code> - It shows the related options in a list. </li>
+               </ul>
+               <h3 style="font-size:20px">HTML <code>&lt;input&gt;</code> Form Element</h3>
+               <p>The HTML <code>&lt;input&gt;</code> form element plays a very important role in defining the input fields.</p>
+               <span>Example</span><br>
+               <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span>&gt;</span><br>
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span><span class="text-info">placeholder=</span>"This is an input"&gt;</span><br>
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span> <span class="text-info">placeholder=</span>"I am an input"&gt;</span><br>
+               </div><br>
+               <span>Output:</span><br>
+               <input type="text"><br><br>
+               <input type="text" placeholder="This is an input"><br><br>
+               <input type="text" placeholder="I am an input"><br>
+               <br>
+               <h3 style="font-size:20px">HTML <code>&lt;label&gt;</code> Form Element</h3>
+               <p>The HTML <code>&lt;label&gt;</code> form element plays a very important role in labelling the input fields.</p>
+               <span>Example</span><br>
+               <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-info">&lt;label></span>First Name <span class="text-info">&lt;/label></span> <br>
+                &lt;input <span class="text-danger">type="text"</span> ><br>
+                <span class="text-info">&lt;label></span>Last Name <span class="text-info">&lt;/label></span> <br>
+                &lt;input <span class="text-danger">type="text"</span> > <br>
+               </div><br>
+               <span>Output:</span><br>
+               <label>First Name</label> <br>
+               <input type="text"> <br>
+               <label>Last Name</label><br>
+                <input type="text"> <br>
+               <br>
+                <h3 style="font-size:20px">HTML <code>&lt;textarea&gt;</code> Form Element</h3>
+                <p>The HTML <code>&lt;textarea&gt;</code> is useful when an input of large text is required from the user.</p>
+                <span>Example</span><br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-info">&lt;label></span>Last Name <span class="text-info">&lt;/label></span> <br>
+                &lt;textarea  cols="30" rows="5">This is a textarea&lt;/textarea>
+                </div><br>
+                <span>Output:</span><br>
+                <label>Message</label> <br>
+                <textarea  cols="30" rows="5">This is a textarea</textarea>
+               
+        <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
+            </ul>
+        <hr>
+
+{% endblock %}

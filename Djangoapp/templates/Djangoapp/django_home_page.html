@@ -1,0 +1,40 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}What Is HTML? {% endblock %}
+{% block metadescription %}What Is HTML?, HTML is the standard markup language for creating Web pages that are to be displayed in a web browsers {% endblock %}
+{% block metakeywords %}HTML, HTML Tutorial{% endblock %}
+
+{% block content %}       
+                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:25px;">What is Django</h1><br>       
+               <p>HTML(Hypertext Markup Language) is the standard markup language for creating Web pages that are to be displayed in a web browsers
+                  This can be a web application page or a website page.
+               </p>
+                <h2 class="display-4 text-success" style="font-size: 28px;">The history of HTML</h2>
+                <p>HTML was first written by Tim Berners-Lee in the year 1993. He was working at CERN (Conseil Européen pour la Recherche Nucléaire; European Organization for Nuclear Research)
+                   It was created for the distribution of relatively simple structured documents suitable for use by authors who were scientists or academics rather than experts in printing or other aspects of document formatting.
+                    Since the HTML have been undergoing some development changes and more features have been added to it.
+                </p>
+                <h2 class="display-4 text-success" style="font-size: 28px;">Fuctions of HTML</h2>
+                <ul>
+                  <li>It is the standard markup language used for creating Web pages</li>
+                  <li>It is used to tell the browser how to display the content</li>
+                  <li>It describes the structure of a Web page</li>
+                  <li>It labels pieces of content using its elements</li>
+                </ul>
+            </article>
+
+           
+          
+        </div>
+        <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        <hr>
+
+{% endblock %}

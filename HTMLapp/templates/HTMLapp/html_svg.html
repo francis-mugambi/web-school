@@ -1,0 +1,21 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}What is the basic structure of HTML page? {% endblock %}
+{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
+{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+
+{% block content %}    
+                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:25px;">HTML SVG</h1><br> 
+               
+        <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
+            </ul>
+        <hr>
+
+{% endblock %}

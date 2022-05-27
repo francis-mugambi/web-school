@@ -1,0 +1,60 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}How to use HTML styles {% endblock %}
+{% block metadescription %}How to use HTML styles {% endblock %}
+{% block metakeywords %}HTML styles{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:25px;">HTML Styles</h1><br>
+<p>The <code>&lt;style&gt;</code> attribute in HTML is used to add styles such as color, font-size,background-color and
+    others.
+    This helps to design the layout of the html code by use of CSS properties. These are shown below: </p>
+<h2 style="font-size: 20px;">Text-color CSS property in HTML</h2>
+<p style="color:green;">This text is displayed with a green color using the code - <code> &lt; style="color:green;" &gt;
+                        This text is displayed using the code &lt; p &gt;</code>
+</p>
+<h2 style="font-size: 20px;">Background-color CSS property in HTML</h2>
+<p style="background-color:gray;">This text is displayed with a gray background-color using the code - <code> &lt; style="background-color:green;" &gt;
+                        This text is displayed using the code &lt; p &gt;</code></p>
+</p>
+<h2 style="font-size: 20px;">Font-size CSS property in HTML</h2>
+<p style="font-size:14px;">This text is displayed in font-size 14px using the code - <code> &lt; style="font-size:14px" &gt;
+                        This text is displayed in font-size 20px using the code &lt; p &gt;</code>
+</p>
+<h2 style="font-size: 20px;">Text-color CSS property in HTML</h2>
+<p style="font-family:verdana">This text is displayed with a font-family using the code - <code> &lt; style="font-family:verdana" &gt;
+                        This text is displayed with a font-family using the code &lt; p &gt;</code>
+</p>
+
+<h4 style="font-size: 20px;">This is a an example of an HTML code with CSS properties.</h4>
+<style>
+    #txt {
+        color: red;
+    }
+</style>
+<textarea class="text-info jumbotro" name="text"
+    style="width:100%; height:350px;border:solid lightgray 10px;padding:10px">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <p style="color: green;">1st paragraph.</p>
+        <p style="background-color: gray;">2nd paragraph</p>
+        <p style="font-size: 20px;">3rd paragraph</p>
+    </body>
+    </html>
+</textarea><br>
+<hr>
+<div class="clearfix">
+    <span class="float-left"><a class="page-link" href="/html/html-comments/">Previous</a></span>
+    <span class="float-right"><a class="page-link" href="/html/html-formatting/">Next</a></span>
+</div>
+</article>
+
+</div>
+<hr>
+
+{% endblock %}

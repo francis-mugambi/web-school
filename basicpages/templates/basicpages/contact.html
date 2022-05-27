@@ -1,0 +1,15 @@
+{% extends "basicpages/base.html" %}
+{% block title %}Contact askgooglehub{% endblock %}
+{% block content %}
+      <h2>Get intouch with us</h2>
+      {% load crispy_forms_tags %}
+      {% for message in messages%}
+      <span class="text-danger text-center">{{message}}</span><br><br>
+      {% endfor %}
+      <form action="" method="POST" class="was-validated" class="col-12">
+       {% csrf_token %}
+       {{form|crispy}}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div><br>
+{% endblock %}    

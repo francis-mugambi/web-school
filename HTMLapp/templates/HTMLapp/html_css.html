@@ -1,0 +1,83 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}Ways of adding CSS to HTML document {% endblock %}
+{% block metadescription %}Ways of adding CSS to HTML document, The ways of adding css to HTML are, inline, external and internal{% endblock %}
+{% block metakeywords %}CSS in HTML, HTML Css{% endblock %}
+
+{% block content %}    
+                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:20px;">Ways of adding CSS to HTML document</h1><br> 
+               <h2 style="font-size: 20px;">Ways of adding CSS to HTML document are:</h2>
+               <ul>
+                <li>Inline CSS method- This involves setting CSS property using the <code>style</code> attribute inside an HTML element. </li>
+                <li>Internal CSS method- The CSS properties are set inside the <code>&lt;head&gt;</code> section using the <code>&lt;style&gt;</code> element. </li>
+                <li>External CSS method- The CSS properties are written in a separate page from the HTML code and linked to the page using
+                         <code>&lt;link&gt;</code> tag</li>
+                </ul>
+                <h3 style="font-size: 20px;">How to add inline CSS.</h3>
+                <div style="border: solid lightgray 10px; padding-left:17px">
+                <span class="text-primary">&lt;h1</span> <span class="text-danger">style</span><span class="text-warning">="color:orange;"
+                </span><span class="text-primary">&gt;</span> <span class="text-warning">An Orange Heading</span><span class="text-primary">&lt;/h1&gt;</span> 
+                <br>
+                <span class="text-primary">&lt;h1</span> <span class="text-danger">style</span><span class="text-warning">="color:blue;"
+                </span><span class="text-primary">&gt;</span><span class="text-primary">A Blue Heading</span><span class="text-primary">&lt;/h1&gt;</span> 
+                <br>
+                <span class="text-primary">&lt;h1</span> <span class="text-danger">style</span><span class="text-warning">="color:red;"
+                </span><span class="text-primary">&gt;</span><span class="text-danger">A Red Heading</span><span class="text-primary">&lt;/h1&gt;</span> 
+                <br>
+                <span class="text-primary">&lt;p</span> <span class="text-danger">style</span><span class="text-warning">="font-size:13px;"
+                </span><span class="text-primary">&gt;</span><span style="font-size: 13px;"">A paragraph with font-size 13px</span><span class="text-primary">&lt;/p&gt;</span> 
+                </div>
+                <br>
+
+                <h3 style="font-size: 20px;">How to add Internal CSS</h3>
+                <div style="border: solid lightgray 10px; padding-left:17px">
+                <span class="text-primary">&lt;</span>!DOCTYPE html <span class="text-primary"> &gt;</span><br>
+                <span class="text-primary">&lt;html&gt;</span><br>  
+                <span class="text-primary">&lt;head&gt;</span><br>
+                <span class="text-primary">&lt;style&gt;</span><br>
+                body{ <span class="text-warning">background-color: gray; </span>}<br>
+                h1 {<span class="text-warning">color: blue; </span>} <br>
+                p {<span class="text-warning">color: red; </span>} <br>
+                <span class="text-primary">&lt;/style&gt;</span><br>
+                <span class="text-primary">&lt;/head&gt;</span><br>
+                <span class="text-primary">&lt;body&gt;</span><br>
+            
+                <span class="text-primary">&lt;h1&gt; </span><span class="text-primary">This is a heading displayed in a blue color</span><span class="text-primary">&lt;/h1&gt; </span><br>
+                <span class="text-primary">&lt;p&gt;</span><span class="text-danger">This is a  paragraph displayed in red color.</span><span class="text-primary">&lt;/p&gt; </span><br><br>
+                <span class="text-primary">&lt;/body&gt;</span><br>
+                <span class="text-primary">&lt;/html&gt;</span>
+                </div>
+                <br>
+                <h3 style="font-size: 20px;">How to add external CSS</h3>
+                <div style="border: solid lightgray 10px; padding-left:10px;" >
+                       <span class="text-primary">&lt;</span>!DOCTYPE html <span class="text-primary"> &gt;</span><br>
+                        <span class="text-primary">&lt;html&gt;</span><br>  
+                        <span class="text-primary">&lt;head&gt;</span><br>
+                         <span class="text-primary">&lt;</span><span class="text-success">link rel="stylesheet" href="styles.css"</span><span class="text-primary">&gt;</span><br>
+                        <span class="text-primary">&lt;/head&gt;</span><br>
+                        <span class="text-primary">&lt;body&gt;</span><br>
+                        
+                        <span class="text-primary">&lt;h1&gt; </span><span class="text-primary">This is a heading displayed in a blue color</span><span class="text-primary">&lt;/h1&gt; </span><br>
+                        <span class="text-primary">&lt;p&gt;</span><span class="text-danger">This is a  paragraph displayed in red color.</span><span class="text-primary">&lt;/p&gt; </span><br><br>
+                        <span class="text-primary">&lt;/body&gt;</span><br>
+                        <span class="text-primary">&lt;/html&gt;</span>
+                </div>
+                        <br>
+                <span>This is the CSS that is linked to the above page as an external CSS saved as "styles.css"</span> <br>
+                <div style="border: solid lightgray 10px; padding-left:10px;">
+                h1  { <span class="text-danger">color: blue;</span><br>
+                        } <br>
+                p  { <span class="text-danger">color: red;</span><br>
+                        } <br>
+                </div>
+                <br>
+           <div class="clearfix">
+                <span class="float-left"><a class="page-link" href="/html/html-formatting/">Previous</a></span>
+                <span class="float-right"><a class="page-link" href="/html/html-colors/">Next</a></span>
+            </div>
+        </article>
+</div>
+        <hr>
+
+{% endblock %}

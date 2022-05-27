@@ -1,0 +1,77 @@
+{% extends "basicpages/base.html" %}
+{% load static %}
+{% block title %}Askgooglehub Java Tutorial{% endblock %}
+{% block metadescription %}Java Tutorial.{% endblock %}
+{% block metakeywords %}Java, Java Tutorial{% endblock %}
+{% block showcase %}
+    <div style="position: relative;">
+        <img src="{% static 'imagesfile/home.jpg' %}" alt="home image"
+            style="margin-top: -24px; border:solid gray 2px; width: 100%; max-height:400px">
+        <span class="text-info"
+            style="position: absolute;top:20%;left:35%;font-size: 25px;"> <span style="font-size: 14px;"><input type="text" placeholder="Search something here..."></span><hr> Welcome
+            to Java Tutorial</span>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;margin-top:2px;font-size:25px;">Java Tutorial</h1><br>
+
+    <div class="row">
+            <article class="col-12 col-sm-6 col-lg-3">
+                {% for iteam in object_list %}
+                <h2 class="display-4 text-success" style="font-size: 27px;">{{iteam.header}}</h2>
+                <a href="/article/{{iteam.url_name}}"><img class="" src="/media/{{iteam.photo}}" alt="image"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/article/{{iteam.url_name}}">{{iteam.paragrah1|truncatewords:"50" }}
+                        <span class="text-danger">read more...</span></a></p>
+                {% endfor %}
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                {% for iteam in iteams2 %}
+              
+                <h2 class="display-4 text-success" style="font-size: 27px;">{{iteam.header}}</h2>
+                <a href="/article/{{iteam.url_name}}"><img src="/media/{{iteam.photo}}" alt="image"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/article/{{iteam.url_name}}">{{iteam.paragrah1|truncatewords:"50" }}
+                        <span class="text-danger">read more...</span></a></p>
+               
+                {% endfor %}
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                {% for iteam in iteams3 %}
+              
+                <h2 class="display-4 text-success" style="font-size: 27px;">{{iteam.header}}</h2>
+                <a href="/article/{{iteam.url_name}}"><img src="/media/{{iteam.photo}}" alt="image"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/article/{{iteam.url_name}}">{{iteam.paragrah1|truncatewords:"50" }}
+                        <span class="text-danger">read more...</span></a></p>
+               
+                {% endfor %}
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                {% for iteam in object_list %}
+              
+                <h2 class="display-4 text-success" style="font-size: 27px;">{{iteam.header}}</h2>
+                <a href="/article/{{iteam.url_name}}"><img src="/media/{{iteam.photo}}" alt="image"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/article/{{iteam.url_name}}">{{iteam.paragrah1|truncatewords:"50" }}
+                        <span class="text-danger">read more...</span></a></p>
+               
+                {% endfor %}
+            </article>
+        </div>
+        <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        <hr>
+
+{% endblock %}

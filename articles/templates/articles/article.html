@@ -1,0 +1,27 @@
+{% extends "basicpages/base.html" %}
+
+<title>{% block title %}{{article.title}}{% endblock %}</title>
+{% block metadescription %}{{article.title}} {{article.paragrah1|truncatewords:"10"}}{% endblock %}
+{% block showcase %}
+    <div style="position: relative;">
+        <img src="/media/{{article.photo}}" alt="image"
+            style="margin-top: -24px; border:solid gray 2px; width: 100%; max-height:400px">
+       
+    </div>
+{% endblock %}
+{% block content %}
+<article>
+    <h1 class="text-center text-info display-4" style="font-size: 30px;">{{article.title}}</h1><hr>
+    <p>{{article.paragrah1}}</p>
+    <h2>{{article.header2}}</h2>
+    <p>{{article.paragrah2}}</p>
+    <h3>{{article.header3}}</h3>
+    <p>{{article.paragrah3}}</p>
+    <h4>{{article.header4}}</h4>
+    <p>{{article.paragrah4}}</p>
+    <h5>{{article.header5}}</h5>
+    <p>{{article.paragrah5}}</p>
+</article>
+{% endblock %}
+
+

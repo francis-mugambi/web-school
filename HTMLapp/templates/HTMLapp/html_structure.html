@@ -1,0 +1,51 @@
+{% extends "basicpages/pages_layout.html" %}
+{% load static %}
+{% block title %}What is the basic structure of HTML page? - askgooglehub {% endblock %}
+{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its
+description {% endblock %}
+{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/lib/w3schools30.css">
+{% block content %}
+<h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+                margin-top:2px;font-size:20px;">The basic structure of an HTML page</h1><br>
+<h3 class="small text-warning">A basic HTML page should have the following tags:</h3>
+<ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code> - It defines that this document is an HTML5 document.</li>
+    <li><code>&lt;html&gt;</code> - This is the root element of an HTML page.</li>
+    <li><code>&lt;head&gt;</code> - This is where the meta information of a HTML webpage is placed.</li>
+    <li><code>&lt;title&gt;</code> - This specifies a title for the HTML page (which is shown in the browser's tab)</li>
+    <li><code>&lt;body&gt;</code> - This is the container for holding all the visible contents of a webpage, such as
+        headings, paragraphs, lists, images, hyperlinks, tables, lists, etc.</li>
+    <li><code>&lt;h1&gt;</code> - This is used to define a large heading of the page.
+    <li><code>&lt;p&gt;</code> - This defines a paragraph of a page.</p>
+</ul>
+<h4 style="font-size: 15px;">The basic structure of an HTML page displayed by a browser.</h4>
+<code>
+                <div >
+                    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;<h1>This is a text displayed in a browser using H1 tag.</h1>&lt;/h1&gt;<br>&lt;p&gt;
+                    <p>This is a  text displayed in a browser using a P tag.</p>&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div></code>
+<h4 style="font-size: 20px;">This is an example of a basic HTML page code.</h4>
+<textarea class="text-info jumbotron" name="text" id=""
+    style="width:100%; height:330px;border:solid lightgray 10px;padding:10px">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Page Title</title> 
+    </head>
+    <body>
+        <h1>My First Heading</h1> 
+        <p>My first paragraph.</p>
+    </body>
+    </html>
+    </textarea>
+<div class="clearfix">
+    <span class="float-left"><a class="page-link" href="/html/">Previous</a></span>
+    <span class="float-right"><a class="page-link" href="/html/html-headings/">Next</a></span>
+</div>
+</article>
+
+</div>
+<hr>
+
+{% endblock %}

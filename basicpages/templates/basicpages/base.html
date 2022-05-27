@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block metadescription %}{% endblock %}" />
+    <meta name="keywords" content="{% block metakeywords %}{% endblock %}" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="navbar bg-dark" style="color: white;"><b><a class="block text-info"
+                href="mailto:mail@askgooglehub.com"><i class="fa fa-envelope"></i> mail@askgooglehub.com</a></b>
+    </header>
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark"
+        style="position: sticky;top:0px;padding: 7px;z-index:1;">
+        <a class="navbar-brand" href="/">Askgooglehub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-white" href="/about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        Programming
+                    </a>
+                    <div class="dropdown-menu bg-secondary">
+                        <a class="dropdown-item text-white" href="/django/">Django</a>
+                        <a class="dropdown-item text-white" href="/php/">PHP</a>
+                        <a class="dropdown-item text-white" href="/python/">Python</a>
+                        <a class="dropdown-item text-white" href="/java/">Java</a>
+                        <a class="dropdown-item text-white" href="/html/">HTML</a>
+                        <a class="dropdown-item text-white" href="/css/">CSS</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        Blogs
+                    </a>
+                    <div class="dropdown-menu bg-secondary">
+                        <a class="dropdown-item text-white" href="/how-to-articles">How To</a>
+                        <a class="dropdown-item text-white" href="/technology/">Technology</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'contact-page' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    {% block showcase %}
+    {% endblock %}
+    <div class="container-fluid" style="max-width: 1200px;margin:auto;">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer id="footer" class=""
+        style="background: linear-gradient(to bottom, #555555 0%,#313131 100%);color:rgba(255,255,255,0.6);">
+        <div class="container">
+
+            <div class="row margin-top-5 margin-bottom-2 size-13">
+
+                <!-- col #1 -->
+                <div class="col-md-4 col-sm-4">
+
+                    <h4 class="letter-spacing-1">CONTACT INFORMATION</h4>
+                    <ul class="list-unstyled footer-list half-paddings noborder">
+                        <li><i class="fa fa-map-marker"></i> Tom Mboya Street Tudor, Msa</li>
+                        <li><i class="fa fa-inbox"></i> P.O BOX. 90420-80100 MSA</li>
+                        <li><i class="fa fa-phone"></i> (+254) </li>
+                        <li><a class="block text-info" href="mailto:mail@askgooglehub.com"><i
+                                    class="fa fa-envelope"></i>
+                                mail@askgooglehub.com</a></li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="clearfix">
+
+                        <a href="https://facebook.com"
+                            class="social-icon social-icon-sm social-icon-border social-facebook pull-left"
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="https://twitter.com"
+                            class="social-icon social-icon-sm social-icon-border social-twitter pull-left"
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="https://youtube.com"
+                            class="social-icon social-icon-sm social-icon-border social-youtube pull-left"
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Youtube">
+                            <i class="icon-youtube"></i>
+                            <i class="icon-youtube"></i>
+                        </a>
+
+                        <a href="https://instagram.com"
+                            class="social-icon social-icon-sm social-icon-border social-instagram pull-left"
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                            <i class="icon-instagram"></i>
+                            <i class="icon-instagram"></i>
+                        </a>
+
+                    </div>
+                    <!-- /Social Icons -->
+
+                </div>
+                <!-- /col #1 -->
+
+                <!-- col #2 -->
+                <div class="col-md-8 col-sm-8">
+
+                    <div class="row">
+
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <h4 class="letter-spacing-1">RECENTLY UPLOADED</h4>
+                            <ul class="list-unstyled footer-list half-paddings noborder">
+                                {% for article in object_list %}
+                                <li><a class="block text-info" href="/article/{{article.url_name}}"><i
+                                            class="fa fa-angle-right"></i> {{article.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <h4 class="letter-spacing-1">TOP TOPICS</h4>
+                            <ul class="list-unstyled footer-list half-paddings noborder">
+                                <li><a class="block text-info" href="/how-to-articles"><i class="fa fa-angle-right"></i>
+                                        How to Tutorials</a></li>
+                                <li><a class="block text-info" href="/html/"><i class="fa fa-angle-right"></i>HTML
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/css/"><i class="fa fa-angle-right"></i> CSS
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/django/"><i class="fa fa-angle-right"></i> Django
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/php/"><i class="fa fa-angle-right"></i>PHP
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/python/"><i class="fa fa-angle-right"></i>Python
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/java/"><i class="fa fa-angle-right"></i> Java
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="/technology/"><i class="fa fa-angle-right"></i> Technology
+                                        Articles</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <h4 class="letter-spacing-1">IMPORTANT LINKS</h4>
+                            <ul class="list-unstyled footer-list half-paddings noborder">
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> How to
+                                        Articles</a></li>
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> HTML
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> CSS
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> Django
+                                        Tutorial</a></li>
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> PHP
+                                        Tutorial</a></li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /col #2 -->
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <ul class="pull-right nomargin list-inline mobile-block">
+                    <li><a class="text-info" href="#">Designed by askgooglehub.com, ICTS </a></li>
+                </ul>
+
+                Copyright © 2022 askgooglehub.com. All Rights Reserved.
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
