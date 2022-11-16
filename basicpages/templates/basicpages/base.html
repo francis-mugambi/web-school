@@ -5,8 +5,10 @@
     <title>{% block title %}{% endblock %}</title>
     <meta name="description" content="{% block metadescription %}{% endblock %}" />
     <meta name="keywords" content="{% block metakeywords %}{% endblock %}" />
+    <meta name="robots" content="{% block index %}index,follow{% endblock %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="16×16" href="/static/imagesfile/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -19,11 +21,11 @@
 <body>
 
     <header class="navbar bg-dark" style="color: white;"><b><a class="block text-info"
-                href="mailto:mail@askgooglehub.com"><i class="fa fa-envelope"></i> mail@askgooglehub.com</a></b>
+                href="mailto:mail@web-devschool.com"><i class="fa fa-envelope"></i> mail@web-devschool.com</a></b>
     </header>
     <nav class="navbar navbar-expand-md bg-secondary navbar-dark"
-        style="position: sticky;top:0px;padding: 7px;z-index:1;">
-        <a class="navbar-brand" href="/">Askgooglehub</a>
+        style="position: sticky;position: -webkit-sticky;top:0px;padding: 7px;z-index:1;">
+        <a class="navbar-brand" href="/">web-devschool.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,21 +33,20 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/">Home</a>
-                </li>
+                </li>                
                 <li class="nav-item">
-                    <a class="nav-link  text-white" href="/about">About</a>
-                </li>
-                <li class="nav-item dropdown">
+                    <a class="nav-link text-white" href="/html/">HTML</a>
+                </li>  
+               <!---- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
                         Programming
                     </a>
-                    <div class="dropdown-menu bg-secondary">
-                        <a class="dropdown-item text-white" href="/django/">Django</a>
-                        <a class="dropdown-item text-white" href="/php/">PHP</a>
-                        <a class="dropdown-item text-white" href="/python/">Python</a>
-                        <a class="dropdown-item text-white" href="/java/">Java</a>
-                        <a class="dropdown-item text-white" href="/html/">HTML</a>
+                    <div class="dropdown-menu bg-secondary">                        
                         <a class="dropdown-item text-white" href="/css/">CSS</a>
+                        <a class="dropdown-item text-white" href="/python/">Python</a>
+                        <a class="dropdown-item text-white" href="/django/">Django</a>
+                        <a class="dropdown-item text-white" href="/php/">PHP</a>           
+                        <a class="dropdown-item text-white" href="/java/">Java</a>    
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -56,6 +57,9 @@
                         <a class="dropdown-item text-white" href="/how-to-articles">How To</a>
                         <a class="dropdown-item text-white" href="/technology/">Technology</a>
                     </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link  text-white" href="/about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{% url 'contact-page' %}">Contact</a>
@@ -81,12 +85,12 @@
 
                     <h4 class="letter-spacing-1">CONTACT INFORMATION</h4>
                     <ul class="list-unstyled footer-list half-paddings noborder">
-                        <li><i class="fa fa-map-marker"></i> Tom Mboya Street Tudor, Msa</li>
-                        <li><i class="fa fa-inbox"></i> P.O BOX. 90420-80100 MSA</li>
+                        <li><i class="fa fa-map-marker"></i> Sparki, Mombasa</li>
+                        <li><i class="fa fa-inbox"></i> P.O BOX</li>
                         <li><i class="fa fa-phone"></i> (+254) </li>
                         <li><a class="block text-info" href="mailto:mail@askgooglehub.com"><i
                                     class="fa fa-envelope"></i>
-                                mail@askgooglehub.com</a></li>
+                                mail@web-devschool.com</a></li>
                     </ul>
 
                     <!-- Social Icons -->
@@ -143,14 +147,12 @@
 
                         <div class="col-md-4 hidden-sm hidden-xs">
                             <h4 class="letter-spacing-1">TOP TOPICS</h4>
-                            <ul class="list-unstyled footer-list half-paddings noborder">
-                                <li><a class="block text-info" href="/how-to-articles"><i class="fa fa-angle-right"></i>
-                                        How to Tutorials</a></li>
+                            <ul class="list-unstyled footer-list half-paddings noborder">                               
                                 <li><a class="block text-info" href="/html/"><i class="fa fa-angle-right"></i>HTML
                                         Tutorial</a></li>
                                 <li><a class="block text-info" href="/css/"><i class="fa fa-angle-right"></i> CSS
                                         Tutorial</a></li>
-                                <li><a class="block text-info" href="/django/"><i class="fa fa-angle-right"></i> Django
+                                <!--<li><a class="block text-info" href="/django/"><i class="fa fa-angle-right"></i> Django
                                         Tutorial</a></li>
                                 <li><a class="block text-info" href="/php/"><i class="fa fa-angle-right"></i>PHP
                                         Tutorial</a></li>
@@ -158,24 +160,26 @@
                                         Tutorial</a></li>
                                 <li><a class="block text-info" href="/java/"><i class="fa fa-angle-right"></i> Java
                                         Tutorial</a></li>
+                                 <li><a class="block text-info" href="/how-to-articles"><i class="fa fa-angle-right"></i>
+                                        How to Tutorials</a></li>
                                 <li><a class="block text-info" href="/technology/"><i class="fa fa-angle-right"></i> Technology
-                                        Articles</a></li>
+                                        Articles</a></li> -->
                             </ul>
                         </div>
 
                         <div class="col-md-4 hidden-sm hidden-xs">
                             <h4 class="letter-spacing-1">IMPORTANT LINKS</h4>
-                            <ul class="list-unstyled footer-list half-paddings noborder">
-                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> How to
-                                        Articles</a></li>
+                            <ul class="list-unstyled footer-list half-paddings noborder">                               
                                 <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> HTML
                                         Tutorial</a></li>
                                 <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> CSS
                                         Tutorial</a></li>
-                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> Django
+                               <!----<li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> Django
                                         Tutorial</a></li>
+                                <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> How to
+                                        Articles</a></li>
                                 <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> PHP
-                                        Tutorial</a></li>
+                                        Tutorial</a></li> --->
                                 
                             </ul>
                         </div>
@@ -192,10 +196,10 @@
         <div class="copyright">
             <div class="container">
                 <ul class="pull-right nomargin list-inline mobile-block">
-                    <li><a class="text-info" href="#">Designed by askgooglehub.com, ICTS </a></li>
+                    <li><a class="text-info" href="#">Designed by web-devschool.com, ICTS </a></li>
                 </ul>
 
-                Copyright © 2022 askgooglehub.com. All Rights Reserved.
+                Copyright © 2022 web-devschool.com. All Rights Reserved.
             </div>
         </div>
 

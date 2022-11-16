@@ -1,29 +1,287 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What is the basic structure of HTML page? {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block title %}Types of inputs in Html {% endblock %}
+{% block metadescription %}Types of input in Html, The types of Html input are: text, checkbox, radio, submit and button {% endblock %}
+{% block metakeywords %} Input types, Types of inputs, HTML inputs, checkbox, radio input, text input {% endblock %}
 
 {% block content %}    
-                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Input Types</h1><br> 
-                <h3 style="font-size: 20px;">HTML Input Types</h3>
-               <ul>
-                       <li>&lt;input <code>type="text"</code>&gt;</li>
-                       <li>&lt;input <code>type="checkbox"</code>&gt;</li>
-                       <li>&lt;input <code>type="submit"</code>&gt;</li>
-                       <li>&lt;input <code>type="radio"</code>&gt;</li>
-                       <li>&lt;input <code>type="button"</code>&gt;</li>
-               </ul>
-               
-        <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
-            </ul>
-        <hr>
+        <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+        margin-top:2px;font-size:25px;">HTML Input Types</h1>
+        <hr><div class="clearfix">
+        <span class="float-left"><a class="page-link" href="/html/html-form-elements/">Previous</a></span>
+        <span class="float-right"><a class="page-link" href="#/">Next</a></span>
+        </div><hr> 
+        <h2 style="font-size: 20px;">HTML Input Types</h2>
+        <ul>
+                <li>&lt;input <code>type="text"</code>&gt; - It defines a text input field.</li>
+                <li>&lt;input <code>type="email"</code>&gt; - It defines an email input field.</li>
+                <li>&lt;input <code>type="password"</code>&gt; - It defines a password input field.</li>
+                <li>&lt;input <code>type="checkbox"</code>&gt; - It defines a checkbox. </li>
+                <li>&lt;input <code>type="number"</code>&gt; - It defines a number input field.</li>                
+                <li>&lt;input <code>type="radio"</code>&gt; - It defines a raddio button.</li>
+                <li>&lt;input <code>type="submit"</code>&gt; - It defines a submit button.</li>
+                <li>&lt;input <code>type="button"</code>&gt; It defines a button.</li>
+                <li>&lt;input <code>type="reset"</code>&gt; - It defines a reset button.</li>              
+                <li>&lt;input <code>type="image"</code>&gt; - It defines an image field.</li>
+                <li>&lt;input <code>type="tel"</code>&gt; - It defines a telephone input field.</li>
+                <li>&lt;input <code>type="url"</code>&gt; - It defines a url input field.</li>                               
+                <li>&lt;input <code>type="file"</code>&gt; It defines a file field. This can be an image or a video.</li>
+                <li>&lt;input <code>type="date"</code>&gt; - It defines a date input field.</li>
+                <li>&lt;input <code>type="datetime-local"</code>&gt; - It defines a date input field that collects the date and time.</li> 
+                <li>&lt;input <code>type="week"</code>&gt; - It defines an input field that collects data of the week in a year</li>
+                <li>&lt;input <code>type="month"</code>&gt; - It defines an input field for a month in a year.</li>                               
+                <li>&lt;input <code>type="search"</code>&gt; - It defines a search field.</li>
+                <li>&lt;input <code>type="range"</code>&gt; - It defines a range input</li>
+                <li>&lt;input <code>type="hidden"</code>&gt; - It defines a hidden field.</li>
+                <li>&lt;input <code>type="color"</code>&gt; - It defines a color input field.</li>                
+        </ul>
+        <h2 style="font-size:20px">HTML text input field</h2>
+        <p>This is is used to define an input field that is expected to collect text from the user.</p>
+        <h3 style="font-size: 20px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Enter a text: &lt;input <code>type=&quot;text&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Text: &lt;input <code>type=&quot;text&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Text input: <input type="text" placeholder="I am a text"><br><br>
+        Enter a text: <input type="text" placeholder="Enter a text here"><br><br>
 
+        <h2 style="font-size:20px">HTML email input field</h2>
+        <p>This is defines an input field that is expected to collect email from the user.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Enter an email: &lt;input <code>type=&quot;email&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Email: &lt;input <code>type=&quot;email&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Email input: <input type="email" placeholder="doejohn96@gmail.com"><br><br>
+        Enter an email: <input type="email" placeholder="Enter email here"><br><br>
+
+        <h2 style="font-size:20px">HTML password input field</h2>
+        <p>This is defines an input field that is expected to collect password from the user.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Enter a password: &lt;input <code>type=&quot;password&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; password: &lt;input <code>type=&quot;password&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        password input: <input type="password" placeholder="Annitah97"><br><br>
+        Enter a password: <input type="password" placeholder="Enter a password here"><br><br>
+
+        <h2 style="font-size:20px">HTML checkbox input field</h2>
+        <p>This defines a checkbox. It enables one to choose one or more of the choices given.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Honest? : &lt;input <code>type=&quot;checkbox&quot;</code> &gt;&lt;br&gt;<br>                          
+                        &nbsp; Wise? : &lt;input <code>type=&quot;checkbox&quot;</code> &gt;&lt;br&gt;<br>
+                        &nbsp; Prayerful? : &lt;input <code>type=&quot;checkbox&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Honest? : <input type="checkbox" ><br>
+        Wise? : <input type="checkbox" ><br>
+        Prayerful? : <input type="checkbox" ><br><br>
+
+        <h2 style="font-size:20px">HTML number input field</h2>
+        <p>This defines an  input field for a number.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Enter a number: &lt;input <code>type=&quot;number&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Number: &lt;input <code>type=&quot;number&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Number input: <input type="number" placeholder="23"><br><br>
+        Enter a number: <input type="number"  placeholder="Enter a number"><br><br>
+
+        <h2 style="font-size:20px">HTML radio input field</h2>
+        <p>This is defines a radio box. It allows the user to select only one choice.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp;Married?: &lt;input <code>type=&quot;radio&quot;</code> name="status" &gt;&lt;br&gt;<br>                          
+                        &nbsp;Divorced?: &lt;input <code>type=&quot;radio&quot;</code> name="status" &gt;&lt;br&gt;<br>
+                        &nbsp;Single?: &lt;input <code>type=&quot;radio&quot;</code> name="status" &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Married? : <input type="radio" name="status" ><br>
+        Divorced? : <input type="radio" name="status" ><br>
+        Single? : <input type="radio" name="status" ><br><br>
+
+        <h2 style="font-size:20px">HTML reset input field</h2>
+        <p>This defines a  reset button.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; First Name: &lt;input <code>type=&quot;text&quot;</code> &gt;&lt;br&gt;<br>                          
+                        &nbsp; Phone Number: &lt;input <code>type=&quot;tel&quot;</code> &gt;&lt;br&gt;<br>
+                        &nbsp; &lt;input <code>type=&quot;submit&quot;</code> &gt;&lt;br&gt;<br>
+                        &nbsp; &lt;input <code>type=&quot;reset&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        <form action="">
+        First Name: <input type="text" placeholder="John"><br><br>
+        Phone number: <input type="tel"  placeholder="+0106072619"><br><br>
+        <input type="submit" name="Submit" style="width: 300px;" class="mb-1"> <br>
+        <input type="reset" name="Reset" style="width: 300px;" > 
+        </form><br>
+
+
+        <h2 style="font-size:20px">HTML date input field</h2>
+        <p>This defines a date field.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a date: &lt;input <code>type=&quot;date&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Date: &lt;input <code>type=&quot;date&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a date: <input type="date" class="mb-1"><br>
+        Date: <input type="date"><br><br>
+
+        <h2 style="font-size:20px">HTML datetime-local input field</h2>
+        <p>This defines a datetime-local field.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a date: &lt;input <code>type=&quot;datetime-local&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Date: &lt;input <code>type=&quot;datetime-local&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a date: <input type="datetime-local" class="mb-1"><br>
+        Date: <input type="datetime-local"><br><br>
+
+        <h2 style="font-size:20px">HTML week input field</h2>
+        <p>This defines a field for a week.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a week: &lt;input <code>type=&quot;Week&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Week: &lt;input <code>type=&quot;week&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a week: <input type="week" class="mb-1"><br>
+        Week: <input type="week"><br><br>
+
+        <h2 style="font-size:20px">HTML month input field</h2>
+        <p>This defines a field for a month.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a month: &lt;input <code>type=&quot;month&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Week: &lt;input <code>type=&quot;month&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a month: <input type="month" class="mb-1"><br>
+        month: <input type="month"><br><br>
+
+        <h2 style="font-size:20px">HTML image input field</h2>
+        <p>This defines an image field.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose an image: &lt;input <code>type=&quot;image&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Week: &lt;input <code>type=&quot;image&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose an image: <input type="image" class="mb-1"><br>
+        Image file: <input type="image"><br><br>
+        
+        <h2 style="font-size:20px">HTML file input field</h2>
+        <p>This defines a file field.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a file: &lt;input <code>type=&quot;file&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; File: &lt;input <code>type=&quot;file&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a file: <input type="file" class="mb-1"><br>
+        File: <input type="file"><br><br>
+        
+        <h2 style="font-size:20px">HTML Range input field</h2>
+        <p>This defines a range of a number to be entered.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a range: &lt;input <code>type=&quot;range&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Range: &lt;input <code>type=&quot;range&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a range: <input type="range" class="mb-1"><br>
+        Range: <input type="range"><br><br>
+
+        <h2 style="font-size:20px">HTML Color input field</h2>
+        <p>This enables one to choose a color.</p>
+        <h3 style="font-size: 17px;">Example</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+                <div>
+                        &lt;form&gt;<br>                        
+                        &nbsp; Choose a color: &lt;input <code>type=&quot;color&quot;</code> &gt;&lt;br&gt;<br>                          
+                         &nbsp; Color: &lt;input <code>type=&quot;color&quot;</code> &gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                </div>
+        </div><br>
+        <h3 style="font-size: 17px;">Output</h3>
+        Choose a color: <input type="color" class="mb-1"><br>
+        Color: <input type="color"><br><br>
+        
+        
+        <hr><div class="clearfix">
+        <span class="float-left"><a class="page-link" href="/html/html-form-elements/">Previous</a></span>
+        <span class="float-right"><a class="page-link" href="#/">Next</a></span>
+        </div><hr>                            
+</article>
+</div>
+<style>
+.active15{
+background-color: green;
+color: white!important;
+}
+</style>
 {% endblock %}

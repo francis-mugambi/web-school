@@ -1,12 +1,16 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What Is HTML? - askgooglehub{% endblock %}
+{% block title %}What Is HTML? {% endblock %}
 {% block metadescription %}What Is HTML?, HTML is the standard markup language for creating Web pages that are to be displayed in a web browsers {% endblock %}
-{% block metakeywords %}HTML, HTML Tutorial{% endblock %}
+{% block metakeywords %}HTML, HTML5, HTML Tutorial{% endblock %}
 
 {% block content %}       
                 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:20px;">What is HTML</h1><br>       
+                margin-top:2px;font-size:20px;">What is HTML</h1>
+                <hr><div class="clearfix">
+                    <span class="float-left"><a class="page-link" href="/">Home</a></span>
+                    <span class="float-right"><a class="page-link" href="/html/html-structure/">Next</a></span>
+                </div><hr>    
                <p>HTML(Hypertext Markup Language) is the standard markup language for creating Web pages that are to be displayed in a web browser.
                   This can be a web application page or a website page.
                </p>
@@ -24,12 +28,16 @@
                   <li>It describes the structure of a Web page</li>
                   <li>It labels pieces of content using its elements</li>
                 </ul>
-                <div class="clearfix">
+                <hr><div class="clearfix">
                     <span class="float-left"><a class="page-link" href="/">Home</a></span>
                     <span class="float-right"><a class="page-link" href="/html/html-structure/">Next</a></span>
-                </div>
+                </div><hr>
             </article>
         </div>
-        <hr>
-
+<style>
+.active1{
+    background-color: green;
+    color: white!important;
+}
+</style>
 {% endblock %}

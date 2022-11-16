@@ -1,20 +1,25 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}HTML Lists - askgooglehub {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block title %}HTML Lists {% endblock %}
+{% block metadescription %}Html lists,HTML Lists are used to group  a set of related iteams,
+ The types of Html lists are: ordered lists, unordered lists and Descriptive lists.{% endblock %}
+{% block metakeywords %}HTML lists, Ordered lists, unordered lists, Descriptive lists{% endblock %}
 
 {% block content %}    
                 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Lists </h1><br> 
+                margin-top:2px;font-size:25px;">HTML Lists </h1>
+                <hr><div class="clearfix">
+                    <span class="float-left"><a class="page-link" href="/html/html-colors/">Previous</a></span>
+                    <span class="float-right"><a class="page-link" href="/html/html-images/">Next</a></span>
+                </div><hr>
                <p>HTML Lists are used to group  a set of related iteams.</p>
-               <h2 style="font-size: 20px;">Types of HTML lists</h2>
+               <h2 style="font-size: 18px;">Types of HTML lists</h2>
                <ul>
                 <li>Ordered Lists</li>
                 <li>Unordered Lists</li>
                 <li>Description Lists</li>
                </ul>
-               <h3 class="text-success" style="font-size: 20px;">Ordered Lists</h3>
+               <h3 class="text-success" style="font-size: 18px;">Ordered Lists</h3>
                <p>Ordered lists are numbered in numerical or alphabetical way. They are defined by the <code>&lt;ol&gt;</code> tag</p>
                <h4 style="font-size: 18px;">Ordered list style type attribute</h4>
                <ol>
@@ -124,10 +129,10 @@
                 </ol>
                </ol>
 
-               <h3 class="text-success" style="font-size: 20px;">Unordered Lists</h3>
+               <h3 class="text-success" style="font-size: 18px;">Unordered Lists</h3>
                <p>Unordered lists are defined by <code>&lt;ul&gt;</code> tag. They are marked with circle, square or disc markers. <br> 
                 The marker can be changed by changing the "list-style-type" property.</p>
-               <h4 style="font-size: 17px;">Types of unordered list markers</h4>
+               <h3 style="font-size: 17px;">Types of unordered list markers</h3>
                <ol>
                    <li>Circle</li>
                    <span>Example code</span><br>
@@ -214,7 +219,7 @@
                 </ul>
                </ol>
 
-               <h3 class="text-success" style="font-size: 20px;">Control the start of Lists</h3>
+               <h4 style="font-size: 18px;">Control the start of Lists</h4>
                <p>You can Control the start of a list by defining the start attribute</p>
                <span>Example code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
@@ -236,7 +241,7 @@
                     <li>Biden</li>
                 </ol>
 
-                <h3 class="text-success" style="font-size: 20px;">Nested HTML Lists</h3>
+                <h3 class="text-success" style="font-size: 18px;">Nested HTML Lists</h3>
                 <p>Nested lists are used when we want to list a list inside a list.</p>
                 <span>Example code</span><br>
                  <div style="border: solid lightgrey 10px; padding:10px;">
@@ -270,7 +275,7 @@
                      <li>Biden</li>
                  </ol>
                  <br>
-                 <h3 class="text-success" style="font-size: 20px;">Descriptive HTML Lists</h3>
+                 <h3 class="text-success" style="font-size: 18px;">Descriptive HTML Lists</h3>
                 <p>Descriptive lists are used list iteams with a description of each of them.</p>
                 <span>Example code</span><br>
                  <div style="border: solid lightgrey 10px; padding:10px;">
@@ -293,13 +298,17 @@
                     <dd>- Hyper Text Markup Language</dd>
                     <dt>CSS</dt>
                     <dd>- Cascading Style Sheets</dd>
-                  </dl><br><hr>
-               <div class="clearfix">
-                <span class="float-left"><a class="page-link" href="/html/html-comments/">Previous</a></span>
-                <span class="float-right"><a class="page-link" href="/html/html-formatting/">Next</a></span>
-            </div>
+                  </dl><br>
+               <hr><div class="clearfix">
+                <span class="float-left"><a class="page-link" href="/html/html-colors/">Previous</a></span>
+                <span class="float-right"><a class="page-link" href="/html/html-images/">Next</a></span>
+            </div><hr>
         </article>
-    </div>
-        <hr>
-
+        </div>    
+        <style>
+            .active10{
+            background-color: green;
+            color: white!important;
+            }
+        </style>
 {% endblock %}

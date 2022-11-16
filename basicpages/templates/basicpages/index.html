@@ -1,38 +1,30 @@
 {% extends "basicpages/base.html" %}
 {% load static %}
-{% block title %}Welcome to askgooglehub{% endblock %}
-{% block metadescription %}Welcome to askgooglehub, the site for programmers and for the people interested in changing the world, 
-        in askgooglehub we help you to solve the real world problems in a proffessional way.{% endblock %}
+{% block title %}Web-devschool Online Tutorials{% endblock %}
+{% block metadescription %}Web-development online web Tutorials, Learn Python, Django, PHP, HTML and Java to become 
+        the best developer {% endblock %}
 {% block metakeywords %}How to, Django Tutorial, PHP Tutorial, HTML Tutorial, CSS Tutorial, Technology Articles{% endblock %}
 {% block showcase %}
     <div style="position: relative;">
         <img src="{% static 'imagesfile/home.jpg' %}" alt="Home"
             style="margin-top: -24px; border:solid gray 2px; width: 100%; max-height:400px">
-        <span class="text-info"
-            style="position: absolute;top:20%;left:35%;font-size: 25px;"> <span style="font-size: 14px;"><input type="text" placeholder="Search something here..."></span><hr> Welcome
-            to askgooglehub</span>
+        <span class="text-success"
+            style="position: absolute;top:20%;left:25%;font-size: 25px;"> Welcome to Web-devschool</span>
     </div>
 {% endblock %}
     {% block content %}
-        <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;margin-top:2px;font-size:28px;">Welcome to Askgooglehub Tutorials</h1><br>
-        <div class="row">
-            <article class="col-12 col-sm-6 col-lg">
-                <h2 class="display-4 text-success" style="font-size: 29px;">How To ... Articles</h2>
-                <a href="/how-to-articles/"><img src="{% static 'imagesfile/How.jpg' %}" alt="How TO"
-                        style="width: 100%; height:auto"></a>
-                <p><a class="text-dark" href="/how-to-articles/">Most of the time we encounter problems in our day to day life
-                        and end up searching in google to find the answers to our problems. This is the best website to find the answers to 
-                        your problems, <span class="text-danger">find answers here</span></a></p>
-
-            </article>
-            <article class="col-12 col-sm-6 col-lg">
+           <h1 class="text-center text-info" style="border-bottom: solid gray 2px;
+           border-top:solid gray 2px;margin-top:2px;font-size:20px;">Web-devschool online web Tutorials</h1><br>
+           <div class="row">
+           <article class="col-12 col-sm-6 col-lg">
                 <h2 class="display-4 text-success" style="font-size: 29px;">HTML Tutorial</h2>
-                <a href="/html/"><img src="{% static 'imagesfile/HTML.png' %}" alt="HTML"
-                        style="width: 100%; height:auto"></a>
+                <a href="/html/"><img src="{% static 'imagesfile/html.png' %}" alt="HTML"
+                style="width: 100%; height:auto"></a>
                 <p><a class="text-dark" href="/html/">HTML(Hypertext Markup Language) is the standard markup language for creating Web pages that 
-                        are displayed by web browsers. This can be a web application page or a website page,
-                        <span class="text-danger">learn HTML here</a></p>
+                are displayed by web browsers. This can be a web application page or a website page,
+                <span class="text-danger">learn HTML here</a></p>
             </article>
+                      
             <article class="col-12 col-sm-6 col-lg">
                 <h2 class="display-4 text-success" style="font-size: 29px;">CSS Tutorial</h2>
                 <a href="/css/"><img src="{% static 'imagesfile/CSS.jpg' %}" alt="CSS"
@@ -41,6 +33,14 @@
                          of an HTML page in a browser. It describes the color,font and layout of the pages to make them presentable to the users, 
                         <span class="text-danger">learn CSS here</a></a></p>
             </article>
+            <article class="col-12 col-sm-6 col-lg">
+                <h2 class="display-4 text-success" style="font-size: 29px;">Python Tutorial</h2>
+                <a href="/java/"><img src="{% static 'imagesfile/Python.jpg' %}" alt="Python"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/python/">Python is a high-level, interpreted, general-purpose programming language that is used in making 
+                        web applications, data analysis, software development, automation tasks, AI, machine learning and others,
+                        <span class="text-danger">learn python here</a></a></p>
+            <!-- </article>
             <article class="col-12 col-sm-6 col-lg">
                 <h2 class="display-4 text-success" style="font-size: 29px;">Django Tutorial</h2>
                 <a href="/django/"><img src="{% static 'imagesfile/Django.png' %}" alt="Django"
@@ -61,15 +61,7 @@
                         making web applications, it can be used to make Static websites or Dynamic websites,
                         <span class="text-danger">learn PHP here</a></a></p>
 
-            </article>
-            <article class="col-12 col-sm-6 col-lg">
-                <h2 class="display-4 text-success" style="font-size: 29px;">Python Tutorial</h2>
-                <a href="/java/"><img src="{% static 'imagesfile/Python.jpg' %}" alt="Python"
-                        style="width: 100%; height:auto"></a>
-                <p><a class="text-dark" href="/python/">Python is a high-level, interpreted, general-purpose programming language that is used in making 
-                        web applications, data analysis, software development, automation tasks, AI, machine learning and others,
-                        <span class="text-danger">learn python here</a></a></p>
-            </article>
+            </article>            
             <article class="col-12 col-sm-6 col-lg">
                 <h2 class="display-4 text-success" style="font-size: 29px;">Java Tutorial</h2>
                 <a href="/java/"><img src="{% static 'imagesfile/Java.jpg' %}" alt="java"
@@ -79,13 +71,22 @@
                         <span class="text-danger">learn java here</a></a></p>
             </article>
             <article class="col-12 col-sm-6 col-lg">
+                <h2 class="display-4 text-success" style="font-size: 29px;">How To ... Articles</h2>
+                <a href="/how-to-articles/"><img src="{% static 'imagesfile/How.jpg' %}" alt="How TO"
+                        style="width: 100%; height:auto"></a>
+                <p><a class="text-dark" href="/how-to-articles/">Most of the time we encounter problems in our day to day life
+                        and end up searching in google to find the answers to our problems. This is the best website to find the answers to 
+                        your problems, <span class="text-danger">find answers here</span></a></p>
+
+            </article>
+            <article class="col-12 col-sm-6 col-lg">
                 <h2 class="display-4 text-success" style="font-size: 29px;">Technology Articles</h2>
                 <a href="/technology/"><img src="{% static 'imagesfile/AI.jpg' %}" alt="AI"
                         style="width: 100%; height:auto"></a>
                 <p><a class="text-dark" href="/technology/">The current world is using technology to automate tasks in the sector of accounting and finance, agriculture, health, 
                         millitary etc. Here at askgooglehub we help you keep track of what is happening around you in the field of technology,
                         <span class="text-danger">learn more here</a></a></p>
-            </article>
+            </article> -->
         </div>
     {% endblock %}
 </body>

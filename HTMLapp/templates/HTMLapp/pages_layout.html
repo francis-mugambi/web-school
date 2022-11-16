@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="{% block metadescription %}{% endblock %}" />
+  <meta name="keywords" content="{% block metakeywords %}{% endblock %}" />
+  <meta name="robots" content="{% block index %}index,follow{% endblock %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="16×16" href="/static/imagesfile/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <style>
+    @media screen and (min-width: 1200px) {
+      #demo {
+        display: block !important;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      #demo {
+        position: fixed !important;
+        top: 70px !important;
+        width: 250px !important;
+        height: 92vh !important;
+      }
+      #btn{
+        display: block!important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar bg-dark" style="color: white;"><b><a class="block text-info"
+        href="mailto:mail@web-devschool.com"><i class="fa fa-envelope"></i> mail@web-devschool.com</a></b>
+  </header>
+  <nav class="navbar navbar-expand-md bg-secondary navbar-dark"
+    style="position: sticky;position: -webkit-sticky;top:0px;padding: 7px;z-index:11;">
+    <a class="navbar-brand" href="/">web-devschool.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/html/">HTML</a>
+        </li>
+       <!---- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+            Programming
+          </a>
+          <div class="dropdown-menu bg-secondary">
+            <a class="dropdown-item text-white" href="/html/">HTML</a>
+            <a class="dropdown-item text-white" href="/css/">CSS</a>
+            <a class="dropdown-item text-white" href="/python/">Python</a>
+            <a class="dropdown-item text-white" href="/django/">Django</a>
+            <a class="dropdown-item text-white" href="/php/">PHP</a>           
+            <a class="dropdown-item text-white" href="/java/">Java</a>            
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+            Blogs
+          </a>
+          <div class="dropdown-menu bg-secondary">
+            <a class="dropdown-item text-white" href="/how-to-articles">How To</a>
+            <a class="dropdown-item text-white" href="/technology/">Technology</a>
+          </div>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'contact-page' %}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  {% block showcase %}
+  {% endblock %}
+  
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-12 col-xl-2 navbar text-dark collapse show" id="demo" style="overflow-y: scroll;height: 94vh;
+      overflow-x: hidden; width:100px;position:sticky;top: 40px;
+        background-color:#E7E9EB;margin:-20px 0 0 0; display:none;z-index:1">
+        <ul class="navbar-nav mb-2 mt-3" style="line-height:14px; margin-left:-17px">
+          <h2 style="font-size: 25px;padding-left:18px">HTML Tutorial</h2>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active1" href="/html/">HTML Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active2" href="/html/html-structure/">HTML Structure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active3" href="/html/html-headings/">HTML Headings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active4" href="/html/html-sematics/">HTML Sematics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active5" href="/html/html-comments/">HTML Comments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active6" href="/html/html-styles/">HTML Styles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active7" href="/html/html-formatting/">HTML Formatting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active8" href="/html/html-css/">HTML & CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active9" href="/html/html-colors/">HTML Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active10" href="/html/html-lists">HTML Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active11" href="/html/html-images/">HTML Images</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active12" href="/html/html-tables/">HTML Tables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active13" href="/html/html-meta-data/">HTML Meta Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active14" href="/html/html-form-elements/">HTML Form Elements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active15" href="/html/html-input-types/">HTML Input Types</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active16" href="/html/html-input-attributes/">HTML Input Attributes</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active17" href="#">HTML & Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active18" href="#">HTML Audio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active19" href="#">HTML Video</a>
+          </li>
+          <h3 style="font-size: 25px;padding-left:18px">HTML Advanced</h3>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active20" href="#">HTML Youtube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active21" href="#">HTML Symbols</a>
+          </li>         
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active22" href="#">HTML Iframes</a>
+          </li>         
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active23" href="#">HTML Canvas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-4 active24" href="#">HTML SVG</a>
+          </li>               
+        </ul>
+      </nav>
+      <br>
+      <article class="col-12 col-xl-10">
+        <button style="display: none;" id="btn" type="button" class="btn btn-secondary mt-2" onclick="myFuction()"> &#9776;</button>
+        <script>
+        // Get the modal
+          var modal = document.getElementById('demo');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+        
+          function myFuction() {
+            document.getElementById("demo").style.display = "block";
+          }
+        </script>
+        <script>
+          var btn = document.getElementById("btn")
+          var modal = document.getElementById('demo');
+          window.addEventListener("click", function(){
+            if (event.target != modal && event.target != btn) {
+            document.getElementById("demo").style.display = "none";
+            }
+          });
+          </script>
+        {% block content %} {% endblock %}
+    </div>
+    <footer id="footer" class=""
+      style="background: linear-gradient(to bottom, #555555 0%,#313131 100%);color:rgba(255,255,255,0.6);">
+      <div class="container">
+
+        <div class="row margin-top-5 margin-bottom-2 size-13">
+
+          <!-- col #1 -->
+          <div class="col-md-4 col-sm-4">
+
+            <h4 class="letter-spacing-1">CONTACT INFORMATION</h4>
+            <ul class="list-unstyled footer-list half-paddings noborder">
+              <li><i class="fa fa-map-marker"></i> Sparki, Mombasa</li>
+              <li><i class="fa fa-inbox"></i> </li>
+              <li><i class="fa fa-phone"></i> (+254) </li>
+              <li><a class="block text-info" href="mailto:mail@askgooglehub.com"><i class="fa fa-envelope"></i>
+                  mail@web-devschool.com</a></li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="clearfix">
+
+              <a href="https://facebook.com"
+                class="social-icon social-icon-sm social-icon-border social-facebook pull-left" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+
+              <a href="https://twitter.com"
+                class="social-icon social-icon-sm social-icon-border social-twitter pull-left" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Twitter">
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+              </a>
+
+              <a href="https://youtube.com"
+                class="social-icon social-icon-sm social-icon-border social-youtube pull-left" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Youtube">
+                <i class="icon-youtube"></i>
+                <i class="icon-youtube"></i>
+              </a>
+
+              <a href="https://instagram.com"
+                class="social-icon social-icon-sm social-icon-border social-instagram pull-left" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Instagram">
+                <i class="icon-instagram"></i>
+                <i class="icon-instagram"></i>
+              </a>
+
+            </div>
+            <!-- /Social Icons -->
+
+          </div>
+          <!-- /col #1 -->
+
+          <!-- col #2 -->
+          <div class="col-md-8 col-sm-8">
+
+            <div class="row">
+
+              <div class="col-md-4 hidden-sm hidden-xs">
+                <h4 class="letter-spacing-1">RECENTLY UPLOADED</h4>
+                <ul class="list-unstyled footer-list half-paddings noborder">
+                  {% for article in object_list %}
+                  <li><a class="block text-info" href="/article/{{article.url_name}}"><i class="fa fa-angle-right"></i>
+                      {{article.title}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="col-md-4 hidden-sm hidden-xs">
+                <h4 class="letter-spacing-1">TOP TOPICS</h4>
+                <ul class="list-unstyled footer-list half-paddings noborder">                 
+                  <li><a class="block text-info" href="/html/"><i class="fa fa-angle-right"></i>HTML Tutorial</a></li>
+                  <li><a class="block text-info" href="/css/"><i class="fa fa-angle-right"></i> CSS Tutorial</a></li>
+                  <!--<li><a class="block text-info" href="/django/"><i class="fa fa-angle-right"></i> Django Tutorial</a>
+                  </li>
+                  <li><a class="block text-info" href="/php/"><i class="fa fa-angle-right"></i>PHP Tutorial</a></li>
+                  <li><a class="block text-info" href="/python/"><i class="fa fa-angle-right"></i>Python Tutorial</a>
+                  </li>
+                  <li><a class="block text-info" href="/how-to-articles"><i class="fa fa-angle-right"></i> How to
+                    Tutorials</a></li>
+                  <li><a class="block text-info" href="/java/"><i class="fa fa-angle-right"></i>Java Tutorial</a></li>
+                  <li><a class="block text-info" href="/technology/"><i class="fa fa-angle-right"></i>Technology
+                      Articles</a></li>-->
+                </ul>
+              </div>
+
+              <div class="col-md-4 hidden-sm hidden-xs">
+                <h4 class="letter-spacing-1">IMPORTANT LINKS</h4>
+                <ul class="list-unstyled footer-list half-paddings noborder">                  
+                  <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> HTML Tutorial</a></li>
+                  <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> CSS Tutorial</a></li>
+                  <!--<li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> Django Tutorial</a></li>
+                  <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> PHP Tutorial</a></li>
+                  <li><a class="block text-info" href="#"><i class="fa fa-angle-right"></i> How to Tutorials</a></li> -->
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- /col #2 -->
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <ul class="pull-right nomargin list-inline mobile-block">
+            <li><a class="text-info" href="#">Designed by web-devschool.com, ICTS </a></li>
+          </ul>
+
+          Copyright © 2022 web-devschool.com. All Rights Reserved.
+        </div>
+      </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,37 +1,24 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}HTML Colors - askgooglehub {% endblock %}
-{% block metadescription %}HTML colors {% endblock %}
-{% block metakeywords %}HTML colors, HTML RGB, HTML HEX, HTML HSL{% endblock %}
+{% block title %}HTML Colors {% endblock %}
+{% block metadescription %}HTML colors, HTML RGB, HTML HEX, HTML HSL. HTML colors can be defined using either 
+the color names, RGB, HSL, HEX, RGBA or HSLA values. {% endblock %}
+{% block metakeywords %}HTML colors, RGB, RGBA, HSL, HSLA, HEX{% endblock %}
 
 {% block content %}    
                 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Colors</h1><br>  
+                margin-top:2px;font-size:25px;">HTML Colors</h1>
+                <hr><div class="clearfix">
+                    <span class="float-left"><a class="page-link" href="/html/html-css/">Previous</a></span>
+                    <span class="float-right"><a class="page-link" href="/html/html-lists/">Next</a></span>
+                </div><hr>
                <p>HTML colors can be defined using either the color names, RGB, HSL, HEX, RGBA or HSLA values.
                </p>
                 <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using color names.</h2>
                 <p>This is where the colors are specified with predefined names such as red, blue, green, gray.
                 </p>
-                <h3 style="font-size: 20px;" >Examples of HTML predefined colors names</h3><br>
-                <div class="clearfix">
-                <span style="background-color: red;" class="float-left py-3 px-5 m-1">Red</span>
-                <span style="background-color: green;" class="float-left py-3 px-5 m-1">Green</span>
-                <span style="background-color: yellow;" class="float-left py-3 px-5 m-1">Yello</span>
-                <span style="background-color: blue;" class="float-left py-3 px-5 m-1">Blue</span>
-                <span style="background-color: orange;" class="float-left py-3 px-5 m-1">Orange</span>
-                <span style="background-color: violet;" class="float-left py-3 px-5 m-1">Violet</span>
-                <span style="background-color: pink;" class="float-left py-3 px-5 m-1">Pink</span>
-                <span style="background-color: indigo;" class="float-left py-3 px-5 m-1 text-white">Indigo</span>
-                <span style="background-color: purple;" class="float-left py-3 px-5 m-1">Purple</span>
-                <span style="background-color: gray;" class="float-left py-3 px-5 m-1">Gray</span>
-                <span style="background-color: lightgray;" class="float-left py-3 px-5 m-1">LightGray</span>
-                <span style="background-color: slateblue;" class="float-left py-3 px-5 m-1">SlateBlue</span>
-                <span style="background-color: dodgerblue;" class="float-left py-3 px-4 m-1">DodgerBlue</span>
-                <span style="background-color: seagreen;" class="float-left py-3 px-5 m-1">Seagreen</span>
-                <span style="background-color: lightgreen;" class="float-left py-3 px-4 m-1">LightGreen</span>
-                </div><br>
-                <h4>HTML code to display colors using their predefined names</h4>
-               <div >
+                <h3 style="font-size: 18px;">HTML code to display HTML colors using their predefined names</h3>
+               <div style="border: solid lightgray 10px; padding-left:17px">
                 <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: red;"</span><span class="text-primary">&gt;</span> Red<span class="text-primary">&lt;/span&gt;</span> <br>
                 <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: green;"</span><span class="text-primary">&gt;</span> Green<span class="text-primary">&lt;/span&gt;</span> <br>
                 <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: yellow;"</span><span class="text-primary">&gt;</span> Yellow<span class="text-primary">&lt;/span&gt;</span> <br>
@@ -49,19 +36,57 @@
                 <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: lightgreen;"</span><span class="text-primary">&gt;</span> LightGreen<span class="text-primary">&lt;/span&gt;</span> <br>
                 
                </div><br>
+                <h3 style="font-size: 18px;" >Output of HTML predefined colors using their names</h3><br>
+                <div class="clearfix">
+                <span style="background-color: red;" class="float-left py-3 px-5 m-1">Red</span>
+                <span style="background-color: green;" class="float-left py-3 px-5 m-1">Green</span>
+                <span style="background-color: yellow;" class="float-left py-3 px-5 m-1">Yello</span>
+                <span style="background-color: blue;" class="float-left py-3 px-5 m-1">Blue</span>
+                <span style="background-color: orange;" class="float-left py-3 px-5 m-1">Orange</span>
+                <span style="background-color: violet;" class="float-left py-3 px-5 m-1">Violet</span>
+                <span style="background-color: pink;" class="float-left py-3 px-5 m-1">Pink</span>
+                <span style="background-color: indigo;" class="float-left py-3 px-5 m-1 text-white">Indigo</span>
+                <span style="background-color: purple;" class="float-left py-3 px-5 m-1">Purple</span>
+                <span style="background-color: gray;" class="float-left py-3 px-5 m-1">Gray</span>
+                <span style="background-color: lightgray;" class="float-left py-3 px-5 m-1">LightGray</span>
+                <span style="background-color: slateblue;" class="float-left py-3 px-5 m-1">SlateBlue</span>
+                <span style="background-color: dodgerblue;" class="float-left py-3 px-4 m-1">DodgerBlue</span>
+                <span style="background-color: seagreen;" class="float-left py-3 px-5 m-1">Seagreen</span>
+                <span style="background-color: lightgreen;" class="float-left py-3 px-4 m-1">LightGreen</span>
+                </div><br>
+                
                <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using RGB values</h2>
                <p>RGB represents RED, GREEN and BLUE. The colors are represented using values that ranges from 0 - 250, for example rgb(255, 255, 255). </p>
                <p>The values 0 - 255 define the intensity of the color. If the value of a color is set to 0 then the color will not be displayed. If the values
                        for all the three color is set to 0 the a black color will be displayed. 
                </p> 
-               <h4>Examples of colors displayed using RGB values.</h4>
+               <h3 style="font-size: 18px;">Example code to display HTML colors using RGB values</h3>
+               <div style="border: solid lightgray 10px; padding-left:17px">
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(255,0,0)"</span><span class="text-primary">&gt;</span> Red<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(0,128,0)"</span><span class="text-primary">&gt;</span> Green<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(255,255,0)"</span><span class="text-primary">&gt;</span> Yellow<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(0,0,255)"</span><span class="text-primary">&gt;</span> Blue<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(255,165,0)"</span><span class="text-primary">&gt;</span> Orange<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(255,165,0)"</span><span class="text-primary">&gt;</span> Violet<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(255,192,203)"</span><span class="text-primary">&gt;</span> pink<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(75,0,130)"</span><span class="text-primary">&gt;</span> Indigo<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(128,0,128)"</span><span class="text-primary">&gt;</span> Purple<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(128,128,128)"</span><span class="text-primary">&gt;</span> Gray<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(211,211,211)"</span><span class="text-primary">&gt;</span> LightGray<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(106,90,205)"</span><span class="text-primary">&gt;</span> SlateBlue<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(30,144,255)"</span><span class="text-primary">&gt;</span> DodgerBlue<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(46,139,87)"</span><span class="text-primary">&gt;</span> Seagreen<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(144,238,144)"</span><span class="text-primary">&gt;</span> LightGreen<span class="text-primary">&lt;/span&gt;</span> <br>
+                
+               </div><br>
+               <h3 style="font-size: 18px;">Output of colors displayed using RGB values.</h3>
                <div class="clearfix">
                 <span style="background-color: red;" class="float-left py-3 px-5 m-1">rgb(255,0,0)</span>
                 <span style="background-color: green;" class="float-left py-3 px-5 m-1">rgb(0,128,0)</span>
                 <span style="background-color: yellow;" class="float-left py-3 px-5 m-1">rgb(255,255,0)</span>
                 <span style="background-color: blue;" class="float-left py-3 px-5 m-1">rgb(0,0,255)</span>
                 <span style="background-color: orange;" class="float-left py-3 px-5 m-1">rgb(255,165,0)</span>
-                <span style="background-color: violet;" class="float-left py-3 px-5 m-1">rgb(238,130,238)</span>
+                <span style="background-color: violet;" class="float-left py-3 px-5 m-1">rgb(255,165,0)</span>
                 <span style="background-color: pink;" class="float-left py-3 px-5 m-1">rgb(255,192,203)</span>
                 <span style="background-color: indigo;" class="float-left py-3 px-5 m-1 text-white">rgb(75,0,130)</span>
                 <span style="background-color: purple;" class="float-left py-3 px-5 m-1">rgb(128,0,128)</span>
@@ -72,13 +97,132 @@
                 <span style="background-color: seagreen;" class="float-left py-3 px-5 m-1">rgb(46,139,87)</span>
                 <span style="background-color: lightgreen;" class="float-left py-3 px-4 m-1">rgb(144,238,144)</span>
                 </div><br>
+
+                <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using RGBA values</h2>
+                    <P>RGBA is an extention of RGB, It has an addational value of alpha parameter that specifies the opacity of the 
+                        color i.e rgba(red, green, blue, alpha). Alpha ranges from 0 to 1.0
+                    </P>           
+                <h3 style="font-size: 18px;">Example code to display HTML colors using RGBA values</h3>
+               <div style="border: solid lightgray 10px; padding-left:17px">
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(155, 255, 50, 0.2)"</span><span class="text-primary">&gt;</span> rgb(155, 255, 50, 0.2)<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(155, 255, 50, 0.4)"</span><span class="text-primary">&gt;</span> rgb(155, 255, 50, 0.4)<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(155, 255, 50, 0.6)"</span><span class="text-primary">&gt;</span> rgb(155, 255, 50, 0.6)<span class="text-primary">&lt;/span&gt;</span> <br>
+                <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: rgb(155, 255, 50, 0.8)"</span><span class="text-primary">&gt;</span> rgb(155, 255, 50, 0.8)<span class="text-primary">&lt;/span&gt;</span> <br>                
+               </div><br>
+
+                    <h3 style="font-size: 18px;">Output of using RGBA colors.</h3>
+                    <div class="clearfix">
+                        <span style="background-color: rgba(155, 255, 50, 0.2);" class="float-left py-3 px-5 m-1">rgba(155, 255, 50, <span class="btn btn-outline-danger">0.2</span> )</span>
+                        <span style="background-color: rgba(155, 255, 50, 0.4);" class="float-left py-3 px-4 m-1">rgba(155, 255, 50, <span class="btn btn-outline-danger">0.4</span> )</span>
+                        <span style="background-color: rgba(155, 255, 50, 0.6);" class="float-left py-3 px-5 m-1">rgba(155, 255, 50, <span class="btn btn-outline-danger">0.6</span> )</span>
+                        <span style="background-color: rgba(155, 255, 50, 0.8);" class="float-left py-3 px-4 m-1">rgba(155, 255, 50, <span class="btn btn-outline-danger">0.8</span> )</span>
+                    </div>
+                    <br>
+
                 <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using HSL values</h2>
-               <div class="clearfix">
-                    <span class="float-left"><a class="page-link" href="/">Home</a></span>
-                    <span class="float-right"><a class="page-link" href="/html/html-structure/">Next</a></span>
-                </div>
+                <P>HSL stands for Hue, Saturation and Lightness.</P>                
+                <h3 style="font-size: 18px;">Hue</h3>
+                <p>It is the degree in which all the colors ranges, Which is normally from 0 to 360. 0 represents red, 
+                        120 represents green, and 240 represents blue.</p>
+
+                <h3 style="font-size: 18px;">Example code to display HTML colors using HSL with varying Hue value</h3>
+                <div style="border: solid lightgray 10px; padding-left:17px">
+                    <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 50%, 50%)"</span><span class="text-primary">&gt;</span> hsl(0, 50%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                    <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(120, 50%, 50%)"</span><span class="text-primary">&gt;</span> hsl(120, 50%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                    <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(240, 50%, 50%)"</span><span class="text-primary">&gt;</span> hsl(240, 50%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                    <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(320, 50%, 50%)"</span><span class="text-primary">&gt;</span> hsl(320, 50%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>                
+                </div><br>
+                <h3 style="font-size: 18px;">Output showing variation of Hue value in HTML colors</h3>
+                <div class="clearfix">
+                <span style="background-color: hsl(0,50%,50%);" class="float-left py-3 px-5 m-1">hsl( <span class="btn btn-outline-info">0</span> , 50%, 50%)</span>
+                <span style="background-color: hsl(120,50%,50%);" class="float-left py-3 px-4 m-1">hsl( <span class="btn btn-outline-danger">120</span> , 50%, 50%)</span>
+                <span style="background-color: hsl(240,50%,50%);" class="float-left py-3 px-5 m-1">hsl( <span class="btn btn-outline-danger">240</span> , 50%, 50%)</span>
+                <span style="background-color: hsl(320,50%,50%);" class="float-left py-3 px-4 m-1">hsl( <span class="btn btn-outline-info">320</span>, 50%, 50%)</span>
+                </div><br>
+                <h3 style="font-size: 18px;">Saturation</h3>
+                    <p>It is a percentage value that ranges from 0% to 100% and describes
+                    the intensity of the color.</p>
+                    <h3 style="font-size: 18px;">Example code to display HTML colors using HSL with varying Saturation value</h3>
+                    <div style="border: solid lightgray 10px; padding-left:17px">
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 20%, 50%)"</span><span class="text-primary">&gt;</span> hsl(0, 20%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 40%, 50%)"</span><span class="text-primary">&gt;</span> hsl(0, 40%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 60%, 50%)"</span><span class="text-primary">&gt;</span> hsl(0, 60%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 80%, 50%)"</span><span class="text-primary">&gt;</span> hsl(0, 80%, 50%)<span class="text-primary">&lt;/span&gt;</span> <br>                
+                    </div><br>
+
+                    <h3 style="font-size: 18px;">Output showing variation of Saturation</h3>
+                    <div class="clearfix">
+                        <span style="background-color: hsl(0,20%,50%);" class="float-left py-3 px-5 m-1">hsl(0, <span class="btn btn-outline-info">20%</span> , 50%)</span>
+                        <span style="background-color: hsl(0,40%,50%);" class="float-left py-3 px-4 m-1">hsl(0, <span class="btn btn-outline-info">40%</span> , 50%)</span>
+                        <span style="background-color: hsl(0,60%,50%);" class="float-left py-3 px-5 m-1">hsl(0, <span class="btn btn-outline-info">60%</span> , 50%)</span>
+                        <span style="background-color: hsl(0,80%,50%);" class="float-left py-3 px-4 m-1">hsl(0, <span class="btn btn-outline-info">80%</span> , 50%)</span>
+                        </div><br>
+                <h3 style="font-size: 18px;">Lightness</h3> 
+                <p>It is a percentage value that describes how much light a color should have,
+                        Ussually ranges from 0% to 100%. The 0% is black, and 100% is white.</p>
+                        <h3 style="font-size: 18px;">Example code to display HTML colors using HSL with varying Lightness value</h3>
+                        <div style="border: solid lightgray 10px; padding-left:17px">
+                            <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(120, 50%, 20%)"</span><span class="text-primary">&gt;</span> hsl(120, 50%, 20%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                            <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(120, 50%, 40%)"</span><span class="text-primary">&gt;</span> hsl(120, 50%, 40%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                            <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(120, 50%, 60%)"</span><span class="text-primary">&gt;</span> hsl(120, 50%, 60%)<span class="text-primary">&lt;/span&gt;</span> <br>
+                            <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(120, 50%, 80%)"</span><span class="text-primary">&gt;</span> hsl(120, 50%, 80%)<span class="text-primary">&lt;/span&gt;</span> <br>                
+                        </div><br>
+
+                        <h3 style="font-size: 18px;">Output showing variation of Lightness</h3>
+                <div class="clearfix">
+                    <span style="background-color: hsl(120,50%,20%);" class="float-left py-3 px-5 m-1 text-white">hsl(120, 50%, <span class="btn btn-outline-danger">20%</span> )</span>
+                    <span style="background-color: hsl(120,50%,40%);" class="float-left py-3 px-4 m-1">hsl(120, 50%, <span class="btn btn-outline-danger">40%</span> ) </span>
+                    <span style="background-color: hsl(120,50%,60%);" class="float-left py-3 px-5 m-1">hsl(120, 50%, <span class="btn btn-outline-danger">60%</span> ) </span>
+                    <span style="background-color: hsl(120,50%,80%);" class="float-left py-3 px-4 m-1">hsl(120, 50%, <span class="btn btn-outline-danger">80%</span> ) </span>
+                    </div><br>
+                    <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using HSLA values</h2>
+                    <P>HSLA is an extention of HSL, It has an addational value of alpha parameter that specifies the level of transparency the 
+                        color should have i.e hsla(hue, saturation, lightness, alpha). Alpha ranges from 0 to 1.0
+                    </P>           
+                    <h3 style="font-size: 18px;">Example code to display HTML colors using HSLA with varying alpha value</h3>
+                    <div style="border: solid lightgray 10px; padding-left:17px">
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 100%, 50%, 0.1)"</span><span class="text-primary">&gt;</span> hsl(0, 100%, 50%, 0.1)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 100%, 50%, 0.4)"</span><span class="text-primary">&gt;</span> hsl(0, 100%, 50%, 0.4)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 100%, 50%, 0.6)"</span><span class="text-primary">&gt;</span> hsl(0, 100%, 50%, 0.5)<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: hsl(0, 100%, 50%, 0.8)"</span><span class="text-primary">&gt;</span> hsl(0, 100%, 50%, 0.8)<span class="text-primary">&lt;/span&gt;</span> <br>                
+                    </div><br>
+                    <h3 style="font-size: 18px;">Output of using HSLA colors.</h3>
+                    <div class="clearfix">
+                    <span style="background-color: hsla(0, 100%, 50%, 0.1);" class="float-left py-3 px-5 m-1">hsla(0, 100%, 50%, <span class="btn btn-outline-danger">0.1</span> ) </span>
+                    <span style="background-color: hsla(0, 100%, 50%, 0.4);" class="float-left py-3 px-4 m-1">hsla(0, 100%, 50%, <span class="btn btn-outline-danger">0.4</span> ) </span>
+                    <span style="background-color: hsla(0, 100%, 50%, 0.6);" class="float-left py-3 px-5 m-1">hsla(0, 100%, 50%, <span class="btn btn-outline-danger">0.6</span> ) </span>
+                    <span style="background-color: hsla(0, 100%, 50%, 0.8);" class="float-left py-3 px-4 m-1">hsla(0, 100%, 50%, <span class="btn btn-outline-danger">0.8</span> ) </span>
+                    </div>
+                    <br>
+
+                    <h2 class="display-4 text-success" style="font-size: 28px;">Defining HTML color using HEX values</h2>
+                    <P>This is where a color is specified with hexadecimal values that range form 00 to ff (#RRGGBB) , where the RR is Red, GG is Green and BB is Blue. 
+                        The range 00 - ff is the same as (0 - 250).</P>           
+                        <h3 style="font-size: 18px;">Example code to display HTML colors using HEX values</h3>
+                    <div style="border: solid lightgray 10px; padding-left:17px">
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: #f1f1f1"</span><span class="text-primary">&gt;</span> #f1f1f1<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: #aaddff"</span><span class="text-primary">&gt;</span> #aaddff<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: #ababab"</span><span class="text-primary">&gt;</span> #ababab<span class="text-primary">&lt;/span&gt;</span> <br>
+                        <span class="text-primary">&lt;span </span><span class="text-warning">style="background-color: #2343ad"</span><span class="text-primary">&gt;</span> #2343ad<span class="text-primary">&lt;/span&gt;</span> <br>                
+                    </div><br>
+                    <h3 style="font-size: 18px;">Output of using Hex colors.</h3>
+                    <div class="clearfix">
+                    <span style="background-color: #f1f1f1;" class="float-left py-3 px-5 m-1">#f1f1f1</span>
+                    <span style="background-color: #aaddff;" class="float-left py-3 px-4 m-1">#aaddff</span>
+                    <span style="background-color: #ababab;" class="float-left py-3 px-5 m-1">#ababab</span>
+                    <span style="background-color: #2343ad;" class="float-left py-3 px-4 m-1">#2343ad</span>
+                    </div>                   
+                    
+               <hr><div class="clearfix">
+                    <span class="float-left"><a class="page-link" href="/html/html-css/">Previous</a></span>
+                    <span class="float-right"><a class="page-link" href="/html/html-lists/">Next</a></span>
+                </div><hr>
             </article>
         </div>
-        <hr>
-
+        <style>
+            .active9{
+            background-color: green;
+            color: white!important;
+            }
+        </style>
 {% endblock %}

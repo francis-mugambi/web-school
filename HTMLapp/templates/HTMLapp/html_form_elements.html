@@ -1,21 +1,177 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What is the basic structure of HTML page? {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block title %}HTML Form Elements {% endblock %}
+{% block metadescription %}HTML Form elements, HTML forms are very important when developing a website. They help the users to interact with the website {% endblock %}
+{% block metakeywords %}Form elements, HTML form elements, HTML forms{% endblock %}
 
 {% block content %}    
                 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Form Elements</h1><br> 
-               
-        <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
-            </ul>
-        <hr>
+                margin-top:2px;font-size:25px;">HTML Form Elements</h1>
+                <hr><div class="clearfix">
+                <span class="float-left"><a class="page-link" href="/html/html-meta-data/">Previous</a></span>
+                <span class="float-right"><a class="page-link" href="/html/html-input-types/">Next</a></span>
+                </div><hr> 
+               <p>HTML forms are used to collect the user input that is sent to the server for processing. Forms are defined using the <code>&lt;form&gt;</code> tag.</p>
+               <h2 style="font-size: 20px;">HTML Form Elements</h2>
+               <ul>
+                       <li><code>&lt;form&gt;</code> - It defines an HTML form. It creates a HTML form.</li>
+                       <li><code>&lt;input&gt;</code> - It is used to get an input from the user.</li>
+                       <li><code>&lt;textarea&gt;</code> - It defines a label for the form elements.</li>
+                       <li><code>&lt;button&gt;</code> - It defines a button. </li>
+                        <li><code>&lt;fieldset&gt;</code> - It groups related elements in a form. </li>
+                        <li><code>&lt;option&gt;</code> - It defines an option to select from a group. </li>
+                        <li><code>&lt;Label&gt;</code> - It defines a label for the input element.</li>
+                        <li><code>&lt;legend&gt;</code> -  It adds a caption to a fieldset. </li>
+                        <li><code>&lt;optgroup&gt;</code> - It shows the related options in a list. </li>
+               </ul>
+               <h3 style="font-size:20px">HTML <code>&lt;input&gt;</code> Form Element</h3>
+               <p>The HTML <code>&lt;input&gt;</code> form element plays a very important role in defining the input fields.</p>
+               <span>Example</span><br>
+               <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span>&gt;</span><br>
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span><span class="text-info">placeholder=</span>"This is an input"&gt;</span><br>
+                <span class="text-primary">&lt;input <span class="text-danger"> type="text" </span> <span class="text-info">placeholder=</span>"I am an input"&gt;</span><br>
+               </div><br>
+               <span>Output:</span><br>
+               <input type="text"><br><br>
+               <input type="text" placeholder="This is an input"><br><br>
+               <input type="text" placeholder="I am an input"><br>
+               <br>
+               <h3 style="font-size:20px">HTML <code>&lt;label&gt;</code> Form Element</h3>
+               <p>The HTML <code>&lt;label&gt;</code> form element plays a very important role in labelling the input fields.</p>
+               <span>Example</span><br>
+               <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-info">&lt;label></span>First Name <span class="text-info">&lt;/label></span> <br>
+                &lt;input <span class="text-danger">type="text"</span> ><br>
+                <span class="text-info">&lt;label></span>Last Name <span class="text-info">&lt;/label></span> <br>
+                &lt;input <span class="text-danger">type="text"</span> > <br>
+               </div><br>
+               <span>Output:</span><br>
+               <label>First Name</label> <br>
+               <input type="text"> <br>
+               <label>Last Name</label><br>
+                <input type="text"> <br>
+               <br>
+                <h3 style="font-size:20px">HTML <code>&lt;textarea&gt;</code> Form Element</h3>
+                <p>The HTML <code>&lt;textarea&gt;</code> is useful when an input of large text is required from the user.
+                <br> The <code>rows</code> attribute is used to indicate the number of visible lines to be shown in a textarea while
+                the <code>cols</code> attribute is used to indicate the visible width of a textarea.</p>
+                <span>Example</span><br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-info">&lt;label></span>Last Name <span class="text-info">&lt;/label></span> <br>
+                <span class="text-info">&lt;textarea</span> <span class="text-danger" >cols="30" rows="5"</span> <span class="text-info">></span>This is a textarea <span class="text-info">&lt;/textarea></span>
+                </div><br>
+                <span>Output:</span><br>
+                <label>Message:</label> <br>
+                <textarea  cols="30" rows="5">This is a textarea</textarea>
+                <br>
+                <h3 style="font-size:20px">HTML <code>&lt;select&gt;</code> Form Element</h3>
+                <p>The HTML <code>&lt;select&gt;</code> element is used to define a dropdown list. <br>
+                The HTML <code>&lt;option&gt;</code> element defines an option that is to be selected that is an iteam of the dropdown list.</p>
+                <h4 style="font-size: 13px;">The HTML <code>&lt;select&gt;</code> element attributes.</h4>
+                <span><code>selected</code> - This defines the iteam that is to be selected in default.</span><br>
+                <span><code>size</code> - This defines the number of visible lines from the dropdown list.</span> <br>
+                <span><code>multiple</code> - This allows the user to select more than one value. </span><br><br>
+                <span>Example</span> <br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                <span class="text-primary">&lt;label &gt;</span>Choose your favourite fruit(s): <span class="text-primary">&lt;/label&gt;</span><br>
+                <span class="text-primary">&lt;select</span> <span class="text-danger">size</span> =&quot;3&quot; <span class="text-danger">multiple </span> <span class="text-primary">&gt;</span><br>
+                &nbsp; <span class="text-primary">&lt;option</span> value=&quot;orange&quot;<span class="text-primary">&gt;</span>Orange<span class="text-primary">&lt;/option&gt;</span><br>
+                &nbsp;
+                <span class="text-primary">&lt;option</span> value=&quot;mango&quot;<span class="text-danger"> selected</span> <span class="text-primary">&gt;</span>Mango<span class="text-primary">&lt;/option&gt;</span><br>
+                &nbsp; <span class="text-primary">&lt;option</span> value=&quot;pineapple&quot;<span class="text-primary">&gt;</span>Pineapple<span class="text-primary">&lt;/option&gt;</span><br>
+                &nbsp;
+                <span class="text-primary">&lt;option</span> value=&quot;watermelon&quot;<span class="text-primary">&gt;</span>Watermelon<span class="text-primary">&lt;/option&gt;</span><br>
+                <span class="text-primary">&lt;/select&gt;</span></div>
+                <br>
+                <span>Output:</span><br>
+                <label >Choose your favourite fruit(s):</label><br>
+                <select size="3" multiple>
+                <option value="orange">Orange</option>
+                <option value="mango" selected>Mango</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="watermelon">Watermelon</option>
+                </select><br>
+                <br>
+                <h3 style="font-size:20px">HTML <code>&lt;datalist&gt;</code> Form Element</h3>
+                <p>The HTML <code>&lt;datalist&gt;</code> element specifies dropdown list for an <code>&lt;input&gt;</code> element. </p>
+                <span>Example</span> <br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                        <span class="text-primary">&lt;form&gt;</span><br>
+                        &nbsp;<span class="text-primary">&lt;input</span><span class="text-danger"> list="animals"</span><span class="text-primary">&gt;</span><br>
+                        &nbsp;<span class="text-primary">&lt;datalist </span><span class="text-danger"> id="animals"</span></span> <span class="text-primary">&gt;</span><br>
+                        &nbsp; &nbsp; <span class="text-primary">&lt;option</span> value=&quot;Donkey&quot;<span class="text-primary">&gt;</span><br>
+                        &nbsp; &nbsp;
+                        <span class="text-primary">&lt;option</span> value=&quot;Camel&quot;<span class="text-primary">&gt;</span><br>
+                        &nbsp; &nbsp; <span class="text-primary">&lt;option</span> value=&quot;Monkey&quot;<span class="text-primary">&gt;</span><br>
+                        &nbsp; &nbsp;
+                        <span class="text-primary">&lt;option</span> value=&quot;Goat&quot;<span class="text-primary">&gt;</span><br>
+                        &nbsp;<span class="text-primary">&lt;/datalist&gt;</span><br>
+                        <span class="text-primary">&lt;/form&gt;</span>
+                </div>
+                        <br>
+                        <span>Output:</span> <br>
+                        <form>
+                                <input list="animals">
+                                <datalist id="animals">
+                                   <option value="Donkey">
+                                   <option value="Camel">
+                                   <option value="Monkey">
+                                   <option value="Goat">
+                                </datalist>
+                        </form>
+                        <br>
+                <h3 style="font-size:20px">HTML <code>&lt;fieldset&gt;</code> Form Element.</h3>
+                <p>This is used to group related input fields.</p>
+                <span>Example</span> <br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                        <span class="text-primary">&lt;form&gt;</span><br>
+                        &nbsp; <span class="text-primary">&lt;fieldset&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp; 
+                        <span class="text-primary">&lt;legend&gt;</span>Personalia:<span class="text-primary">&lt;legend&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp; <span class="text-primary">&lt;label&gt;</span>First name:&lt;/label&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&nbsp; 
+                        <span class="text-primary">&lt;input</span> type=&quot;text&quot; value=&quot;John&quot;&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&nbsp; <span class="text-primary">&lt;label&gt;</span>Last name:&lt;/label&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&nbsp; 
+                        <span class="text-primary">&lt;input</span> type=&quot;text&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&nbsp; 
+                        <span class="text-primary">&lt;input</span> type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>
+                        &nbsp; <span class="text-primary">&lt;fieldset&gt;</span><br>
+                        <span class="text-primary">&lt;/form&gt;</span>
+                </div>
+                <span>Output:</span><br>
+                <form>
+                        <legend>Personalia</legend>
+                        First Name: <br> <input type="text"><br>
+                        Second Name: <br> <input type="text"><br>
+                </form>
+                <br>
+                <h3 style="font-size:20px">HTML <code>&lt;button&gt;</code> Form Element.</h3>
+                <P>This defines a clickable element.</P>
+                <span>Example</span><br>
+                <div style="border: solid lightgrey 10px; padding:10px;">
+                        <span class="text-primary">&lt;button&gt;</span>button<span class="text-primary">&lt;/button&gt;</span><br>
+                        <span class="text-primary">&lt;button&gt;</span> I am a button<span class="text-primary">&lt;/button&gt;</span><br>
 
+                </div>
+                <span>Output</span> <br>
+                <div>
+                        <button class="mr-2">button</button>
+                        <button> I am a button</button>
+                </div>               
+                
+                <hr><div class="clearfix">
+                <span class="float-left"><a class="page-link" href="/html/html-meta-data/">Previous</a></span>
+                <span class="float-right"><a class="page-link" href="/html/html-input-types/">Next</a></span>
+                </div><hr>
+                </article>
+            </div>      
+            <style>
+                .active14{
+                background-color: green;
+                color: white!important;
+                }
+            </style> 
 {% endblock %}
+

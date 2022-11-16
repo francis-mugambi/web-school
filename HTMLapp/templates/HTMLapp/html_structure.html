@@ -1,15 +1,20 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What is the basic structure of HTML page? - askgooglehub {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its
+{% block title %}What is the basic structure of HTML page? {% endblock %}
+{% block metadescription %}The basic structure of HTML page, The basic structure of an HTML page comprises of the html,
+ body, head, title, h1 and paragraph tags.
 description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block metakeywords %}Structure of HTML, HTML Structure, HTML basic, HTML layout {% endblock %}
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/lib/w3schools30.css">
 {% block content %}
 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:20px;">The basic structure of an HTML page</h1><br>
-<h3 class="small text-warning">A basic HTML page should have the following tags:</h3>
+                margin-top:2px;font-size:20px;">The basic structure of an HTML page</h1>
+<hr><div class="clearfix">
+    <span class="float-left"><a class="page-link" href="/html/">Previous</a></span>
+    <span class="float-right"><a class="page-link" href="/html/html-headings/">Next</a></span>
+</div><hr>
+<h2 style="font-size: 18px;">A basic HTML page should have the following tags:</h2>
 <ul>
     <li><code>&lt;!DOCTYPE html&gt;</code> - It defines that this document is an HTML5 document.</li>
     <li><code>&lt;html&gt;</code> - This is the root element of an HTML page.</li>
@@ -20,13 +25,13 @@ description {% endblock %}
     <li><code>&lt;h1&gt;</code> - This is used to define a large heading of the page.
     <li><code>&lt;p&gt;</code> - This defines a paragraph of a page.</p>
 </ul>
-<h4 style="font-size: 15px;">The basic structure of an HTML page displayed by a browser.</h4>
+<h3 style="font-size: 17px;">The basic structure of an HTML page displayed by a browser.</h3>
 <code>
                 <div >
-                    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;<h1>This is a text displayed in a browser using H1 tag.</h1>&lt;/h1&gt;<br>&lt;p&gt;
+                    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;<p style="font-size: 30px;">This is a text displayed in a browser using H1 tag.</p>&lt;/h1&gt;<br>&lt;p&gt;
                     <p>This is a  text displayed in a browser using a P tag.</p>&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div></code>
-<h4 style="font-size: 20px;">This is an example of a basic HTML page code.</h4>
-<textarea class="text-info jumbotron" name="text" id=""
+<br><h3 style="font-size: 18px;">This is an example of a basic HTML page code.</h3>
+<textarea class="text-info"
     style="width:100%; height:330px;border:solid lightgray 10px;padding:10px">
     <!DOCTYPE html>
     <html>
@@ -39,13 +44,16 @@ description {% endblock %}
     </body>
     </html>
     </textarea>
-<div class="clearfix">
+<hr><div class="clearfix">
     <span class="float-left"><a class="page-link" href="/html/">Previous</a></span>
     <span class="float-right"><a class="page-link" href="/html/html-headings/">Next</a></span>
-</div>
+</div><hr>
 </article>
-
 </div>
-<hr>
-
+<style>
+.active2{
+background-color: green;
+color: white!important;
+}
+</style>
 {% endblock %}

@@ -8,4 +8,5 @@ urlpatterns = [
     path('about/', views.about_view.as_view(), name='about-page'),
     path('contact/', views.contact_view, name='contact-page'),
     path('how-to-enable-touchpad/', TemplateView.as_view(template_name='basicpages/touchpad_enable.html'), name='touchpad-page'),
+    path('comming-soon/', TemplateView.as_view(template_name='basicpages/comming_soon.html'), name='comming-soon-page'),
 ]

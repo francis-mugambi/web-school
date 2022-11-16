@@ -1,21 +1,77 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What is the basic structure of HTML page? {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block title %}What is HTML meta data? {% endblock %}
+{% block metadescription %}HTML meta data, Metadata are used tell the browser and search engine about a
+web page{% endblock %}
+{% block metakeywords %}Metadata, meta data, HTML meta, meta{% endblock %}
 
 {% block content %}    
-                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Meta Data</h1><br> 
-               
-        <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
-            </ul>
-        <hr>
+        <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+        margin-top:2px;font-size:25px;">HTML Meta Data</h1>
+        <hr><div class="clearfix">
+        <span class="float-left"><a class="page-link" href="/html/html-tables/">Previous</a></span>
+        <span class="float-right"><a class="page-link" href="/html/html-form-elements/">Next</a></span>
+        </div><hr> 
+        <p>Metadata are used tell the browsers how to display content or reload page,
+         they specify the character set and viewport settings for the browser, they are also used to tell the search engine about the
+          page description, keywords and author of the document.</p>
+        <p>Metadata is specified using the <code>&lt;meta&gt;</code> tag.</p>
+        <H2 style="font-size: 18px;">Types of metadata</H2><br>
+        <h3 style="font-size: 17px;">Charset meta</h3>
+        <p>It defines the type of character set to be used by the browser</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <span>&lt;meta <code>charset</code>=&quot;UTF-8&quot;&gt;</span>
+        </div><br>
+        <h3 style="font-size: 17px;">Document refresh meta </h3>
+        <p>It tells the browser when to refresh a web page</p>
+        <p>The <code>content="50"</code> part tells the browser to refresh after every 50 seconds.</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <div>&lt;meta http-equiv=&quot;<code>refresh</code>&quot; content=&quot;50&quot;&gt;</div>
+        </div><br>
+        <h3 style="font-size: 17px;">Viewport meta </h3>
+        <p>It instructs the browser on how to control the page's dimensions and scaling.</p>
+        <p>The <code>width=device-width</code> part sets the width of the page to follow the screen-width 
+        of the device (This will vary depending on the device).</p>
+        <p>The <code>initial-scale=1.0</code> part sets the initial zoom level when the page is first loaded by the browser.</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <span>&lt;meta name=&quot;<code>viewport</code>&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span>
+        </div><br>
+        <h3 style="font-size: 17px;">Keywords meta </h3>
+        <p>It defines the keywords of a web page to search engines</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <div>&lt;meta name=&quot;<code>keywords</code>&quot; content=&quot;HTML, AJAX&quot;&gt;</div>
+        </div><br>
+        <h3 style="font-size: 17px;">Description meta</h3>
+        <p>It defines the description of a web page</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <div>&lt;meta name=&quot;<code>description</code>&quot; content=&quot;Best Programming site&quot;&gt;</div>
+        </div><br>
+        <h3 style="font-size: 17px;">Author meta</h3>
+        <p>It defines the author of a web page</p>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <div>&lt;meta name=&quot;<code>author</code>&quot; content=&quot;Francis&quot;&gt;</div>
+        </div><br>
+        <h3 style="font-size: 18px;">Example of a web page with all the above metas</h3>
+        <div style="border: solid lightgrey 10px; padding:10px;">
+        <code>&lt;meta charset=&quot;UTF-8&quot;&gt;<br>&lt;meta name=&quot;description&quot; content=&quot;Best Programming site&quot;&gt;<br>
+        &lt;meta name=&quot;keywords&quot; content=&quot;HTML, AJAX&quot;&gt;<br>
+        &lt;meta name=&quot;author&quot; content=&quot;Francis&quot;&gt;<br></code>
+        </div>
+                
+
+        <hr><div class="clearfix">
+        <span class="float-left"><a class="page-link" href="/html/html-tables/">Previous</a></span>
+        <span class="float-right"><a class="page-link" href="/html/html-form-elements/">Next</a></span>
+        </div><hr>
+        
+</article>
+</div>
+<style>
+        .active13{
+        background-color: green;
+        color: white!important;
+        }
+    </style>              
+        
 
 {% endblock %}

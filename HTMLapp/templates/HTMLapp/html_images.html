@@ -1,21 +1,62 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
-{% block title %}What is the basic structure of HTML page? {% endblock %}
-{% block metadescription %}The basic structure of HTML page, This is the basic simple structure of an HTML page and its description {% endblock %}
-{% block metakeywords %}Structure of HTML, HTML Structure{% endblock %}
+{% block title %}HTML Image tag{% endblock %}
+{% block metadescription %}HTML Images, How to display HTML images in a web page {% endblock %}
+{% block metakeywords %}HTML Images, Images Attributes{% endblock %}
 
 {% block content %}    
-                <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Images</h1><br> 
-               
-        <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item"><a class="page-link" href="{% url 'home-page' %}">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="/html/html-headings/">Next</a></li>
-            </ul>
-        <hr>
+<h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
+margin-top:2px;font-size:25px;">HTML Image tag</h1>               
+<hr><div class="clearfix">
+<span class="float-left"><a class="page-link" href="/html/html-lists/">Previous</a></span>
+<span class="float-right"><a class="page-link" href="/html/html-tables/">Next</a></span>
+</div><hr>
+<p>HTML image is defined using the <code>&lt;img&gt;</code> tag.</p>
+<p>The sytax for defining an image in a web page is: <span class="text-danger">&lt;img src=&quot;<span class="text-info">image url</span>&quot; 
+        alt=&quot;<span class="text-info">alternative Text</span>&quot; 
+        width="<span class="text-info">image width</span>" height="<span class="text-info">image height</span>" &gt;</span></p>
+<h2 style="font-size: 20px;">HTML Image Attributes </h2>
+<h3 style="font-size: 18px;"><span class="text-danger">src</span> attribute</h3>
+<p>It specifies the path to the image e.g (src="mypic.png")</p>
+<h3 style="font-size: 18px;"><span class="text-danger">alt</span> attribute</h3>
+<p>It specifies the alternative text that will be displayed if the the image fails to load e.g (alt="tree imge")</p>
+<h3 style="font-size: 18px;"><span class="text-danger">width</span> attribute</h3>
+<p>It specifies the width of the image e.g (width="400px")</p>
+<h3 style="font-size: 18px;"><span class="text-danger">height</span> attribute</h3>
+<p>It specifies the height of the image e.g (height="250px")</p>
+<h3 style="font-size: 18px;">Example</h3>
+<div style="border: solid lightgray 10px; padding-left:17px">
+<p><span class="text-danger">&lt;img src=&quot;<span class="text-info">audi.jpg</span>&quot; 
+alt=&quot;<span class="text-info">Audi car</span>&quot; 
+width="<span class="text-info">100px</span>" height="<span class="text-info">300px</span>"&gt;</span></p>
+</div><br>
+<h3 style="font-size: 18px;">Output</h3>
+<img src="/static/imagesfile/audi.jpg" alt="Audi car" height="200px" width="300px"><br><br>
+<h2 style="font-size: 23px;">Using Image as a link</h2>
+<p>Images can be used as a link by putting the image tag inside the <code>&lt;a&gt;</code> tag.</p>
+<h3 style="font-size: 18px;">Example showing using image as a link</h3>
+<div style="border: solid lightgray 10px; padding-left:17px">
+<p>&lt;a href=&quot;/&quot;&gt;<br>
+<span class="text-danger">&lt;img src=&quot;<span class="text-info">audi.jpg</span>&quot; 
+alt=&quot;<span class="text-info">Audi car</span>&quot; 
+width="<span class="text-info">100px</span>" height="<span class="text-info">300px</span>"&gt;</span><br>
+&lt;/a&gt;
+</p></div><br>
+<h3 style="font-size: 18px;">Output: Click the image to navigate to homepage</h3>
+<a href="/">
+<img src="/static/imagesfile/audi.jpg" alt="Audi car" style="width: 100%; height:300px">
+</a><br>
+<hr><div class="clearfix">
+<span class="float-left"><a class="page-link" href="/html/html-lists/">Previous</a></span>
+<span class="float-right"><a class="page-link" href="/html/html-tables/">Next</a></span>
+</div><hr>
 
+</article>
+</div>
+<style>
+.active11{
+background-color: green;
+color: white!important;
+}
+</style>
 {% endblock %}

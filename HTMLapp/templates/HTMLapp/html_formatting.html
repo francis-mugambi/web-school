@@ -1,13 +1,18 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
 {% block title %}HTML formatting elements{% endblock %}
-{% block metadescription %}HTML formatting elements {% endblock %}
+{% block metadescription %}HTML formatting elements, HTML formatting is a method for defining text 
+with special meaning, for example making a text to be italic or bold {% endblock %}
 {% block metakeywords %}, HTML formatting, HTML elements{% endblock %}
 
 {% block content %}
                 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:25px;">HTML Formating Elements</h1><br>
-                <h2 style="font-size:20px">What is HTML formatting?</h2> 
+                margin-top:2px;font-size:25px;">HTML Formating Elements</h1>
+                <hr><div class="clearfix">
+                    <span class="float-left"><a class="page-link" href="/html/html-styles/">Previous</a></span>
+                    <span class="float-right"><a class="page-link" href="/html/html-css/">Next</a></span>
+                </div><hr>
+                <h2 style="font-size:18px">What is HTML formatting?</h2> 
                 <p>HTML formatting is a method for defining text with special meaning, for example making a text to be italic or bold. </p>
                 <h3 style="font-size: 20px;">HTML Formatting Elements</h3>
                 <ul>
@@ -22,7 +27,7 @@
                     <li><code>&lt;em&gt;</code> - Used to to show emphasize of a text.</li>
                     <li><code>&lt;mark&gt;</code> - Used to show a marked text by italizing it. </li>
                 </ul>
-                <h4 style="font-size: 17px;">HTML bold element (<code>&lt;bold&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML bold element (<code>&lt;bold&gt;</code>)</h3>
                 <span>Example of an HTML bold text code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;b></span><span class="text-info">This is a bold text</span><span class="text-primary">&lt;/b></span><br>
@@ -32,7 +37,7 @@
                 <span><b>This is a bold text</b></span><br>
                 <span><b>I am a bold text</b></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML strong element (<code>&lt;strong&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML strong element (<code>&lt;strong&gt;</code>)</h3>
                 <span>Example of an HTML strong text code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;strong></span><span class="text-info">This is a strong text</span><span class="text-primary">&lt;/strong></span><br>
@@ -42,7 +47,7 @@
                 <span><strong>This is a strong text</strong></span><br>
                 <span><strong>I am a strong text</strong></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML italic element (<code>&lt;italic&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML italic element (<code>&lt;italic&gt;</code>)</h3>
                 <span>Example of an HTML italic text code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;i></span><span class="text-info">This an italized text</span><span class="text-primary">&lt;/i></span><br>
@@ -52,7 +57,7 @@
                 <span><i>This is an italized text</i></span><br>
                 <span><i>I am an italized text</i></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML em element (<code>&lt;em&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML em element (<code>&lt;em&gt;</code>)</h3>
                 <span>Example of an HTML code that will output an emphasized textt</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;em></span><span class="text-info">This an emphasized text written with em element</span><span class="text-primary">&lt;/em></span><br>
@@ -62,7 +67,7 @@
                 <span><em>This a marked text written with em element</em></span><br>
                 <span><em>I am a marked text written with em element</em></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML del element (<code>&lt;del&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML del element (<code>&lt;del&gt;</code>)</h3>
                 <span>Example of an HTML del text code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;del></span><span class="text-info">This a deleted text</span><span class="text-primary">&lt;/del></span><br>
@@ -72,7 +77,7 @@
                 <span><del>This is a deleted text</del></span><br>
                 <span><del>I am a deleted text</del></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML small element (<code>&lt;small&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML small element (<code>&lt;small&gt;</code>)</h3>
                 <span>Example of an HTML small text code</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;small></span><span class="text-info">This a small text</span><span class="text-primary">&lt;/small></span><br>
@@ -82,7 +87,7 @@
                 <span><small>This is a small text</small></span><br>
                 <span><small>I am a small text</small></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML ins element (<code>&lt;ins&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML ins element (<code>&lt;ins&gt;</code>)</h3>
                 <span>Example of an HTML text code with ins element</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;ins></span><span class="text-info">This a text written with an ins element</span><span class="text-primary">&lt;/ins></span><br>
@@ -92,7 +97,7 @@
                 <span><ins>This is an inserted text</ins></span><br>
                 <span><ins>I am an inserted text</ins></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML mark element (<code>&lt;mark&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML mark element (<code>&lt;mark&gt;</code>)</h3>
                 <span>Example of an HTML code that will output a marked text</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;mark></span><span class="text-info">This a marked text written with mark element</span><span class="text-primary">&lt;/mark></span><br>
@@ -102,7 +107,7 @@
                 <span><mark>This a marked text written with mark element</mark></span><br>
                 <span><mark>I am a marked text written with mark element</mark></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML sup element (<code>&lt;sup&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML sup element (<code>&lt;sup&gt;</code>)</h3>
                 <span>Example of an HTML code that will output a supscripted text</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;span></span><span class="text-info">This a <span class="text-primary">&lt;sup><span class="text-info">supscript</span></span><span class="text-primary">&lt;/sup></span><span class="text-primary">&lt;/span></span><br>
@@ -112,7 +117,7 @@
                 <span>This is a <sup>subscript</sup></span><br>
                 <span>I am a <sup>subscript</sup></span><br>
                 <br>
-                <h4 style="font-size: 17px;">HTML sub element (<code>&lt;sub&gt;</code>)</h4>
+                <h3 style="font-size: 17px;">HTML sub element (<code>&lt;sub&gt;</code>)</h3>
                 <span>Example of an HTML code that will output a subscripted text</span><br>
                 <div style="border: solid lightgrey 10px; padding:10px;">
                 <span class="text-primary">&lt;span></span><span class="text-info">This a <span class="text-primary">&lt;sub><span class="text-info">subscript</span></span><span class="text-primary">&lt;/sub></span><span class="text-primary">&lt;/span></span><br>
@@ -121,14 +126,16 @@
                 <span>Output:</span><br>
                 <span>This is a <sub>subscript</sub></span><br>
                 <span>I am a <sub>subscript</sub></span><br>
-                <br><hr>
-                <div class="clearfix">
+                <hr><div class="clearfix">
                     <span class="float-left"><a class="page-link" href="/html/html-styles/">Previous</a></span>
                     <span class="float-right"><a class="page-link" href="/html/html-css/">Next</a></span>
-                </div>
-            </article>
-          
+                </div><hr>
+            </article>          
         </div>
-        <hr>
-
+        <style>
+            .active7{
+            background-color: green;
+            color: white!important;
+            }
+        </style>
 {% endblock %}

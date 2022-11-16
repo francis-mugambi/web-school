@@ -1,12 +1,16 @@
-{% extends "basicpages/pages_layout.html" %}
+{% extends "HTMLapp/pages_layout.html" %}
 {% load static %}
 {% block title %}HTML headings h1 to h6{% endblock %}
-{% block metadescription %}Html headings h1 to h6 {% endblock %}
-{% block metakeywords %}, HTML headings{% endblock %}
+{% block metadescription %}HTML headings h1 to h6, They are used when displaying a heading of a topic in a web page. {% endblock %}
+{% block metakeywords %} H1, H2, H3, H4, H5, H6, HTML headings, H1-H6{% endblock %}
 
 {% block content %}
 <h1 class="text-center text-info" style="border-bottom: solid gray 2px;border-top:solid gray 2px;
-                margin-top:2px;font-size:20px;">HTML Headings H1 to H6</h1><br>
+     margin-top:2px;font-size:20px;">HTML Headings H1 to H6</h1>
+<hr><div class="clearfix">
+    <span class="float-left"><a class="page-link" href="/html/html-structure/">Previous</a></span>
+    <span class="float-right"><a class="page-link" href="/html/html-sematics/">Next</a></span>
+</div><hr>
 <h2 style="font-size:20px">Description of HTML headings H1 to H6</h2>
 <ul>
     <li><code>&lt;H1&gt;</code> - This is the main heading of a web page, each page should have only one H1 heading</li>
@@ -22,15 +26,15 @@
     CSS
     property, they should only be used for creating heading of topics and sub-topics.
 </span><br><br>
-<h3 class="small text-success">These are the 6 HTML headings texts in a browser:</h3>
+<h3 style="font-size: 18px;" class="text-success">These are the 6 HTML headings texts in a browser:</h3>
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
 <h3>This is heading 3</h3>
 <h4>This is heading 4</h4>
 <h5>This is heading 5</h5>
 <h6>This is heading 6</h6><br>
-<h2 style="font-size: 17px;">This is a an example of a code that will display all the HTML headings.</h2>
-<textarea class="text-info jumbotron" name="text"
+<h2 style="font-size: 18px;">This is a an example of a code that will display all the HTML headings.</h2>
+<textarea class="text-info" name="text"
     style="width:100%;height:450px;border:solid lightgray 10px;padding:10px">
     <!DOCTYPE html>
     <html>
@@ -48,13 +52,16 @@
     </body>
     </html>
 </textarea>
-<div class="clearfix">
+<hr><div class="clearfix">
     <span class="float-left"><a class="page-link" href="/html/html-structure/">Previous</a></span>
     <span class="float-right"><a class="page-link" href="/html/html-sematics/">Next</a></span>
-</div>
+</div><hr>
 </article>
-
 </div>
-<hr>
-
+<style>
+    .active3{
+    background-color: green;
+    color: white!important;
+    }
+</style>
 {% endblock %}

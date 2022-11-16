@@ -4,6 +4,6 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='Pythonapp/python_home_page.html')),
+    path('', TemplateView.as_view(template_name='basicpages/comming_soon.html')),
    
 ]
