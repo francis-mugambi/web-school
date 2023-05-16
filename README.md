@@ -1,4 +1,3 @@
-#Developers Web School
-This a Programming Tutorial website designed 
-by Francis Mugambi to help developers accross 
-the world in solving the real world problems.
+# Developers Web School
+This a Programming Tutorial website designed  to help developers learn about programming. 
+The website have tutorials in various technologies that are used in web development.
